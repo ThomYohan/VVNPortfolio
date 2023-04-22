@@ -1,20 +1,32 @@
-<script lang="ts">
-export default {
-    data() {
-        return {
-            greeting: 'Hello World'
-        }
-    }
-}
-</script>
-
 <template>
-    <div>weewoo</div>
-    <p>{{ greeting }}</p>
+    <n-config-provider :theme="darkTheme">
+        <div>weewoo</div>
+        <p>{{ greeting }}</p>
+    </n-config-provider>
 </template>
 
-<style scoped>
-    p {
-        color: lightsalmon
+
+<script lang="ts">
+  import { defineComponent } from 'vue'
+  import { darkTheme } from 'naive-ui'
+
+  export default defineComponent({
+    setup() {
+      return {
+        darkTheme
+      }
+    },
+    data() {
+        return {
+            greeting: "homie"
+        }
     }
+  })
+</script>
+
+
+<style scoped>
+p {
+    color: lightsalmon
+}
 </style>

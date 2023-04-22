@@ -1,3 +1,9 @@
+<template>
+    <div>woowee</div>
+    <p>{{ greeting }}</p>
+</template>
+
+
 <script lang="ts">
 export default {
     data() {
@@ -8,13 +14,9 @@ export default {
 }
 </script>
 
-<template>
-    <div>woowee</div>
-    <p>{{ greeting }}</p>
-</template>
 
 <style scoped>
     p {
-        color: lightcyan
+        color: purple
     }
 </style>

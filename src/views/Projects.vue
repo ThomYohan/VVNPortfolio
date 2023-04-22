@@ -1,3 +1,9 @@
+<template>
+    <div>pwojects</div>
+    <p>{{ greeting }}</p>
+</template>
+
+
 <script lang="ts">
 export default {
     data() {
@@ -8,10 +14,6 @@ export default {
 }
 </script>
 
-<template>
-    <div>pwojects</div>
-    <p>{{ greeting }}</p>
-</template>
 
 <style scoped>
     p {

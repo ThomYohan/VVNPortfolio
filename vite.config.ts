@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     Components({
       // add components here to make them globally available
+      dirs: ["src/components/"]
     }),
     vue(),
     // AutoImport({

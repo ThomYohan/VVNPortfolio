@@ -2,17 +2,16 @@
   <!-- <main></main> -->
   <!-- <n-config-provider :theme="darkTheme"> -->
   <n-config-provider :theme-overrides="themeOverrides">
-  <!-- <n-config-provider> -->
-    <router-link to="/">Home</router-link>
-    <router-link to="/About">About</router-link>
-    <router-link to="/Projects">Projects</router-link>
+    <!-- <n-config-provider> -->
+    <NavBar />
     <router-view />
   </n-config-provider>
 </template>
 
 
 <script setup lang="ts">
-  import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
+import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
+// import NavBar from './components/NavBar.vue';
 
 /**
  * Use this for type hints under js file

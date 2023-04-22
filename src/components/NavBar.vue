@@ -1,7 +1,5 @@
 <template>
     <n-config-provider :theme="darkTheme">
-        <div>weewoo</div>
-        <p>{{ greeting }}</p>
         <n-card>
             <n-space>
                 <n-button @click="theme = darkTheme">
@@ -12,6 +10,10 @@
                 </n-button>
             </n-space>
         </n-card>
+        <router-link to="/">Home</router-link>
+        <router-link to="/About">About</router-link>
+        <router-link to="/Projects">Projects</router-link>
+        <!-- <router-view /> -->
     </n-config-provider>
 </template>
 
@@ -28,11 +30,11 @@ export default defineComponent({
             theme: ref<GlobalTheme | null>(null)
         }
     },
-    data() {
-        return {
-            greeting: "homie"
-        }
-    }
+    // data() {
+    //     return {
+    //         greeting: "homie"
+    //     }
+    // }
 })
 </script>
 

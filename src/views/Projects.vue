@@ -2,19 +2,19 @@
 export default {
     data() {
         return {
-            greeting: 'Hello Abwout'
+            greeting: 'Hello Pwojects'
         }
     }
 }
 </script>
 
 <template>
-    <div>woowee</div>
+    <div>pwojects</div>
     <p>{{ greeting }}</p>
 </template>
 
 <style scoped>
     p {
-        color: lightcyan
+        color: lightpink
     }
 </style>

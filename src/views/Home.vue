@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
     p {
-        color: red
+        color: lightsalmon
     }
 </style>

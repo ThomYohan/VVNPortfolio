@@ -1,20 +1,17 @@
 <template>
-    <n-config-provider :theme="darkTheme">
-        <n-card>
-            <n-space>
-                <n-button @click="theme = darkTheme">
-                    Dark
-                </n-button>
-                <n-button @click="theme = null">
-                    Light
-                </n-button>
-            </n-space>
-        </n-card>
+    <!-- <n-config-provider :theme="darkTheme"> -->
+    <div class="navBar">
+        <n-button @click="theme = darkTheme">
+            Dark
+        </n-button>
+        <n-button @click="theme = null">
+            Light
+        </n-button>
         <router-link to="/">Home</router-link>
         <router-link to="/About">About</router-link>
         <router-link to="/Projects">Projects</router-link>
-        <!-- <router-view /> -->
-    </n-config-provider>
+    </div>
+    <!-- </n-config-provider> -->
 </template>
 
 
@@ -30,11 +27,6 @@ export default defineComponent({
             theme: ref<GlobalTheme | null>(null)
         }
     },
-    // data() {
-    //     return {
-    //         greeting: "homie"
-    //     }
-    // }
 })
 </script>
 

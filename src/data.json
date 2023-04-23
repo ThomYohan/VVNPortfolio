@@ -16,6 +16,64 @@
             "route": "/About"
         }
     ],
+    "history": [
+        {
+            "id": "1",
+            "role": "Software Engineer",
+            "name": "Dstillery",
+            "location": "New York",
+            "date": "April 2022 - March 2023",
+            "details": {
+                "detail1": "Teamed up with the Product Director, and a team of skilled Software Engineers to deliver new interfaces across a handful of environments",
+                "detail2": "Worked directly with an outsourced team of proficient UI/UX Designers to review, clean up, and finalize new production designs for a multi-quarter project",
+                "detail3": "Overhauled existing interfaces and cleaned up ui issues across a variety of environments",
+                "detail4": "Created presentations, mockups, and proof-of-concepts for cross-team collaboration and communication of deliverables",
+                "detail5": ""
+            }
+        },
+        {
+            "id": "2",
+            "role": "Software Engineer",
+            "name": "Speakfully",
+            "location": "Eau Claire, WI",
+            "date": "August 2020 - November 2021",
+            "details": {
+                "detail1": "Collaborated with the CTO, CEO, Principal Software Engineer, & UI/UX Designer to deliver seamless web experiences",
+                "detail2": "Reworked and maintained full life-cycle development of the company website as the Software Engineer",
+                "detail3": "Created and implemented multiple front end web experiences across web/mobile",
+                "detail4": "Built reusable components utilizing CMS/CRM integrations & various plugins to conditionally display sensitive data",
+                "detail5": ""
+            }
+        },
+        {
+            "id": "3",
+            "role": "Full Stack Developer",
+            "name": "RentChirp",
+            "location": "San Francisco, CA",
+            "date": "April 2020 - August 2020",
+            "details": {
+                "detail1": "Customize UI elements using Reactjs, HTML, CSS, & Javascript",
+                "detail2": "Perform bug fixes and code reviews",
+                "detail3": "",
+                "detail4": "",
+                "detail5": ""
+            }
+        },
+        {
+            "id": "4",
+            "role": "Associate Software Engineer",
+            "name": "PK Technology",
+            "location": "Wichita, KS",
+            "date": "November 2019 - January 2020 ",
+            "details": {
+                "detail1": "",
+                "detail2": "Collaborate and contribute in contunous integration/deployment to optimize frontend styles on web and mobile(iOS)",
+                "detail3": "",
+                "detail4": "",
+                "detail5": ""
+            }
+        }
+    ],
     "projects": [
         {
             "id": "1",
@@ -24,6 +82,13 @@
             "subheading": "Current Portfolio",
             "techStack": "Vue3, Vite, Typescript, Naive Ui, Motion One, Pinia, Sass",
             "description": "",
+            "details": {
+                "info1": "",
+                "info1": "",
+                "info1": "",
+                "info1": "",
+                "info1": ""
+            },
             "thumbnail": "",
             "thumbnailFallback": "",
             "images": {
@@ -40,6 +105,13 @@
             "subheading": "Mobile App",
             "techStack": "MERN",
             "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI",
+            "details": {
+                "info1": "Collaborated in ground-level development of an app, from start to app store submission",
+                "info1": "Created the frontend of an app that allows you to message, co-create, and coordinate real life facilities that also utilize the apps architecture to streamline the customer experience",
+                "info1": "",
+                "info1": "",
+                "info1": ""
+            },
             "thumbnail": "",
             "thumbnailFallback": "",
             "images": {
@@ -56,6 +128,13 @@
             "subheading": "Mobile App",
             "techStack": "MERN",
             "description": "Mobile app for Speakfully",
+            "details": {
+                "info1": "Collaborated with the CTO, Principal Software Engineer, & UI/UX Designer to release a web app connected to our existing architecture",
+                "info1": "Created the frontend of an app that allows you to document, submit, and track workplace experiences",
+                "info1": "",
+                "info1": "",
+                "info1": ""
+            },
             "thumbnail": "",
             "thumbnailFallback": "",
             "images": {
@@ -72,6 +151,13 @@
             "subheading": "Website",
             "techStack": "MEVN",
             "description": "Front facing website for Speakfully",
+            "details": {
+                "info1": "Utilized front end framework/languages to provide route-based, conditionally rendered content to guide customers from first-click to POS",
+                "info1": "Utilized Bootstrap, HTML, & CSS to consolidate and maintain site-wide styling",
+                "info1": "Utilized Nuxt/Meta Tags to improve SEO and marketability",
+                "info1": "",
+                "info1": ""
+            },
             "thumbnail": "",
             "thumbnailFallback": "",
             "images": {
@@ -88,6 +174,13 @@
             "subheading": "Full CRUD Website",
             "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
             "description": "",
+            "details": {
+                "info1": "",
+                "info1": "",
+                "info1": "",
+                "info1": "",
+                "info1": ""
+            },
             "thumbnail": "",
             "thumbnailFallback": "",
             "images": {
@@ -104,6 +197,13 @@
             "subheading": "Full CRUD Website",
             "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
             "description": "",
+            "details": {
+                "info1": "",
+                "info1": "",
+                "info1": "",
+                "info1": "",
+                "info1": ""
+            },
             "thumbnail": "",
             "thumbnailFallback": "",
             "images": {

@@ -31,18 +31,30 @@
             </template>
             Card Content
         </n-card> -->
-    <div>
+    <div class="landingContainer">
         <div>
             <h1>Hello I'm <h1>Thomas</h1>
             </h1>
             <h2>A Frontend Software Engineer based in Wichita, Kansas</h2>
         </div>
-        <n-button strong secondary type="primary">
-            Primary
+        <n-button strong secondary type="warning">
+            Resume
         </n-button>
         <!-- <h3></h3> -->
     </div>
+    <div class="aboutContainer">
+        <div>
+            <h2>Fullstack Developer with a <h2>Frontend Focus</h2>
+            </h2>
+        </div>
+        <h3> From under 10 person startups to over 100 person companies </h3>
+        <h4>1</h4>
+        <h5>2</h5>
+        <h6>3</h6>
+    </div>
     <Tile />
+    <History />
+    <Footer />
     <!-- </n-config-provider> -->
 </template>
 
@@ -52,11 +64,15 @@ import { defineComponent, ref } from 'vue'
 import { darkTheme } from 'naive-ui'
 import type { GlobalTheme } from 'naive-ui'
 // import { Icon } from '@vicons/utils'
+import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
+import Footer from '../components/Footer.vue'
 
 export default defineComponent({
     components: {
-        Tile
+        History,
+        Tile,
+        Footer
     },
     setup() {
         return {

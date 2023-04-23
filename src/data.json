@@ -19,12 +19,14 @@
     "projects": [
         {
             "id": "1",
+            "type": "C",
             "name": "Portfolio",
             "subheading": "Current Portfolio",
             "techStack": "Vue3, Vite, Typescript, Naive Ui, Motion One, Pinia, Sass",
             "description": "",
             "thumbnail": "",
-            "images" : {
+            "thumbnailFallback": "",
+            "images": {
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -33,12 +35,14 @@
         },
         {
             "id": "2",
+            "type": "A",
             "name": "Coven App",
             "subheading": "Mobile App",
             "techStack": "MERN",
             "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI",
             "thumbnail": "",
-            "images" : {
+            "thumbnailFallback": "",
+            "images": {
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -47,12 +51,14 @@
         },
         {
             "id": "3",
+            "type": "B",
             "name": "SpeakfullyNow",
             "subheading": "Mobile App",
             "techStack": "MERN",
             "description": "Mobile app for Speakfully",
             "thumbnail": "",
-            "images" : {
+            "thumbnailFallback": "",
+            "images": {
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -61,12 +67,14 @@
         },
         {
             "id": "4",
+            "type": "C",
             "name": "Speakfully",
             "subheading": "Website",
             "techStack": "MEVN",
             "description": "Front facing website for Speakfully",
             "thumbnail": "",
-            "images" : {
+            "thumbnailFallback": "",
+            "images": {
                 "image1": "",
                 "image2": "",
                 "image3": "",
@@ -75,12 +83,30 @@
         },
         {
             "id": "5",
+            "type": "B",
             "name": "ShifTradr",
-            "subheading": "Full CRUD",
+            "subheading": "Full CRUD Website",
             "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
             "description": "",
             "thumbnail": "",
-            "images" : {
+            "thumbnailFallback": "",
+            "images": {
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
+        },
+        {
+            "id": "6",
+            "type": "B",
+            "name": "Fitness Calculator",
+            "subheading": "Full CRUD Website",
+            "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
+            "description": "",
+            "thumbnail": "",
+            "thumbnailFallback": "",
+            "images": {
                 "image1": "",
                 "image2": "",
                 "image3": "",

@@ -84,10 +84,10 @@
             "description": "",
             "details": {
                 "info1": "",
-                "info1": "",
-                "info1": "",
-                "info1": "",
-                "info1": ""
+                "info2": "",
+                "info3": "",
+                "info4": "",
+                "info5": ""
             },
             "thumbnail": "",
             "thumbnailFallback": "",
@@ -107,10 +107,10 @@
             "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI",
             "details": {
                 "info1": "Collaborated in ground-level development of an app, from start to app store submission",
-                "info1": "Created the frontend of an app that allows you to message, co-create, and coordinate real life facilities that also utilize the apps architecture to streamline the customer experience",
-                "info1": "",
-                "info1": "",
-                "info1": ""
+                "info2": "Created the frontend of an app that allows you to message, co-create, and coordinate real life facilities that also utilize the apps architecture to streamline the customer experience",
+                "info3": "",
+                "info4": "",
+                "info5": ""
             },
             "thumbnail": "",
             "thumbnailFallback": "",
@@ -130,10 +130,10 @@
             "description": "Mobile app for Speakfully",
             "details": {
                 "info1": "Collaborated with the CTO, Principal Software Engineer, & UI/UX Designer to release a web app connected to our existing architecture",
-                "info1": "Created the frontend of an app that allows you to document, submit, and track workplace experiences",
-                "info1": "",
-                "info1": "",
-                "info1": ""
+                "info2": "Created the frontend of an app that allows you to document, submit, and track workplace experiences",
+                "info3": "",
+                "info4": "",
+                "info5": ""
             },
             "thumbnail": "",
             "thumbnailFallback": "",
@@ -153,10 +153,10 @@
             "description": "Front facing website for Speakfully",
             "details": {
                 "info1": "Utilized front end framework/languages to provide route-based, conditionally rendered content to guide customers from first-click to POS",
-                "info1": "Utilized Bootstrap, HTML, & CSS to consolidate and maintain site-wide styling",
-                "info1": "Utilized Nuxt/Meta Tags to improve SEO and marketability",
-                "info1": "",
-                "info1": ""
+                "info2": "Utilized Bootstrap, HTML, & CSS to consolidate and maintain site-wide styling",
+                "info3": "Utilized Nuxt/Meta Tags to improve SEO and marketability",
+                "info4": "",
+                "info5": ""
             },
             "thumbnail": "",
             "thumbnailFallback": "",
@@ -176,10 +176,10 @@
             "description": "",
             "details": {
                 "info1": "",
-                "info1": "",
-                "info1": "",
-                "info1": "",
-                "info1": ""
+                "info2": "",
+                "info3": "",
+                "info4": "",
+                "info5": ""
             },
             "thumbnail": "",
             "thumbnailFallback": "",
@@ -199,10 +199,10 @@
             "description": "",
             "details": {
                 "info1": "",
-                "info1": "",
-                "info1": "",
-                "info1": "",
-                "info1": ""
+                "info2": "",
+                "info3": "",
+                "info4": "",
+                "info5": ""
             },
             "thumbnail": "",
             "thumbnailFallback": "",

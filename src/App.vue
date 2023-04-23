@@ -1,11 +1,18 @@
 <template>
   <!-- <main></main> -->
+  <!-- <Suspense> -->
+    <n-config-provider :theme-overrides="themeOverrides">
+      <NavBar />
+      <router-view />
+    </n-config-provider>
+    <!-- <n-config-provider #Fallback>
+
+    </n-config-provider>
+  </Suspense> -->
+  <!-- <Suspense #Fallback>
+
+  </Suspense> -->
   <!-- <n-config-provider :theme="darkTheme"> -->
-  <n-config-provider :theme-overrides="themeOverrides">
-    <!-- <n-config-provider> -->
-    <NavBar />
-    <router-view />
-  </n-config-provider>
 </template>
 
 

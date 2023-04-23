@@ -1,7 +1,7 @@
 <template>
     <!-- <n-config-provider :theme="!darkTheme"> -->
         <div>weewoo</div>
-        <p>{{ greeting }}</p>
+        <!-- <p>{{ greeting }}</p>
         <n-gradient-text :gradient="{
             deg: 180,
             from: 'rgb(85, 85, 85)',
@@ -26,11 +26,12 @@
         </n-gradient-text>
         <n-card title="Card with Cover">
             <template #cover>
-                <!-- <img src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg"> -->
+                <img src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg">
                 <img class="card-img" src="../assets/icons/slycoopy.png">
             </template>
             Card Content
-        </n-card>
+        </n-card> -->
+        <Tile />
     <!-- </n-config-provider> -->
 </template>
 
@@ -40,8 +41,12 @@ import { defineComponent, ref } from 'vue'
 import { darkTheme } from 'naive-ui'
 import type { GlobalTheme } from 'naive-ui'
 // import { Icon } from '@vicons/utils'
+import Tile from '../components/Tile.vue'
 
 export default defineComponent({
+    components: {
+        Tile
+    },
     setup() {
         return {
             darkTheme,

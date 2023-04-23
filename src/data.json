@@ -1,0 +1,48 @@
+{
+    "routes": [
+        {
+            "name": "Orca",
+            "route": "/"
+        },
+        {
+            "name": "Work",
+            "route": "/Projects"
+        },
+        {
+            "name": "About",
+            "route": "/About"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Portfolio",
+            "subheading": "Current Portfolio",
+            "techStack": "Vue3, Vite, Typescript, Naive Ui, Motion One, Pinia, Sass",
+            "description": ""
+        },
+        {
+            "name": "Coven App",
+            "subheading": "Mobile App",
+            "techStack": "MERN",
+            "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI"
+        },
+        {
+            "name": "SpeakfullyNow",
+            "subheading": "Mobile App",
+            "techStack": "MERN",
+            "description": "Mobile app for Speakfully"
+        },
+        {
+            "name": "Speakfully",
+            "subheading": "Website",
+            "techStack": "MEVN",
+            "description": "Front facing website for Speakfully"
+        },
+        {
+            "name": "ShifTradr",
+            "subheading": "Full CRUD",
+            "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
+            "description": ""
+        }
+    ]
+}

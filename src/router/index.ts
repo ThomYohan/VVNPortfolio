@@ -20,6 +20,11 @@ export default createRouter({
       component: About
       // component: () => import('@/views/About.vue'),
     },
+    {
+      path: '/resume',
+      component: About
+      // component: () => import('@/views/resume.vue'),
+    },
     // {
     //   path: '/contact',
     //   component: () => import('@/views/Contact.vue'),

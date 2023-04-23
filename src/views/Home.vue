@@ -31,6 +31,17 @@
             </template>
             Card Content
         </n-card> -->
+    <div>
+        <div>
+            <h1>Hello I'm <h1>Thomas</h1>
+            </h1>
+            <h2>A Frontend Software Engineer based in Wichita, Kansas</h2>
+        </div>
+        <n-button strong secondary type="primary">
+            Primary
+        </n-button>
+        <!-- <h3></h3> -->
+    </div>
     <Tile />
     <!-- </n-config-provider> -->
 </template>

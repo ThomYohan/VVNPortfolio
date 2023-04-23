@@ -5,6 +5,30 @@
         <h4>{{ data.subheading }}</h4>
         <!-- <n-image :src="data.thumbnail" /> -->
     </div>
+    <n-grid :cols="2">
+        <n-form-item-gi label="Item Count">
+            <!-- <n-input-number v-model:value="gridItemCount" :min="1" /> -->
+            <n-input-number :min="1" />
+        </n-form-item-gi>
+        <n-form-item-gi label="Max Rows After Collapsed">
+            <n-input-number :min="1" />
+        </n-form-item-gi>
+        <n-form-item-gi label="Show Suffix Node">
+            <!-- <n-switch v-model:value="showSuffix" /> -->
+            <n-switch />
+        </n-form-item-gi>
+        <n-form-item-gi label="Grid Collapsed">
+            <n-switch />
+        </n-form-item-gi>
+    </n-grid>
+    <!-- <n-grid :cols="5" :collapsed="gridCollapsed" :collapsed-rows="gridCollapsedRows">
+        <n-gi v-for="i in gridItemCount" :key="i" :class="i % 2 ? 'green' : 'light-green'">
+            {{ i }}
+        </n-gi>
+        <n-gi v-if="showSuffix" suffix class="suffix" #="{ overflow }">
+            {{ overflow ? 'Node Overflows Exists' : 'No Node Overflows' }}
+        </n-gi>
+    </n-grid> -->
 </template>
 
 
@@ -14,11 +38,17 @@ import Data from "../data.json";
 export default {
     data() {
         return {
-            // greeting: 'Hello Abwout'
-            // data: Data
             Data
         }
+    },
+    setup () {
+    return {
+    //   gridCollapsed: ref(false),
+    //   gridCollapsedRows: ref(1),
+    //   gridItemCount: ref(4),
+    //   showSuffix: ref(true)
     }
+  }
 }
 </script>
 

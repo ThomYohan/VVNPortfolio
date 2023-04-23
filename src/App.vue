@@ -1,11 +1,13 @@
 <template>
   <!-- <main></main> -->
   <!-- <Suspense> -->
-    <n-config-provider :theme-overrides="themeOverrides">
+  <n-config-provider :theme-overrides="themeOverrides">
+    <div class="webContainer">
       <NavBar />
       <router-view />
-    </n-config-provider>
-    <!-- <n-config-provider #Fallback>
+    </div>
+  </n-config-provider>
+  <!-- <n-config-provider #Fallback>
 
     </n-config-provider>
   </Suspense> -->

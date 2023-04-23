@@ -1,6 +1,8 @@
 <template>
-    <div>woowee</div>
-    <p>{{ greeting }}</p>
+    <div class="webContainer">
+        <div>woowee</div>
+        <p>{{ greeting }}</p>
+    </div>
 </template>
 
 
@@ -16,7 +18,7 @@ export default {
 
 
 <style scoped>
-    p {
-        color: purple
-    }
+p {
+    color: purple
+}
 </style>

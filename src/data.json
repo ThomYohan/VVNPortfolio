@@ -1,14 +1,17 @@
 {
     "routes": [
         {
+            "id": "1",
             "name": "Orca",
             "route": "/"
         },
         {
+            "id": "2",
             "name": "Work",
             "route": "/Projects"
         },
         {
+            "id": "3",
             "name": "About",
             "route": "/About"
         }

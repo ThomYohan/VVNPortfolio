@@ -15,34 +15,74 @@
     ],
     "projects": [
         {
+            "id": "1",
             "name": "Portfolio",
             "subheading": "Current Portfolio",
             "techStack": "Vue3, Vite, Typescript, Naive Ui, Motion One, Pinia, Sass",
-            "description": ""
+            "description": "",
+            "thumbnail": "",
+            "images" : {
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
         },
         {
+            "id": "2",
             "name": "Coven App",
             "subheading": "Mobile App",
             "techStack": "MERN",
-            "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI"
+            "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI",
+            "thumbnail": "",
+            "images" : {
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
         },
         {
+            "id": "3",
             "name": "SpeakfullyNow",
             "subheading": "Mobile App",
             "techStack": "MERN",
-            "description": "Mobile app for Speakfully"
+            "description": "Mobile app for Speakfully",
+            "thumbnail": "",
+            "images" : {
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
         },
         {
+            "id": "4",
             "name": "Speakfully",
             "subheading": "Website",
             "techStack": "MEVN",
-            "description": "Front facing website for Speakfully"
+            "description": "Front facing website for Speakfully",
+            "thumbnail": "",
+            "images" : {
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
         },
         {
+            "id": "5",
             "name": "ShifTradr",
             "subheading": "Full CRUD",
             "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
-            "description": ""
+            "description": "",
+            "thumbnail": "",
+            "images" : {
+                "image1": "",
+                "image2": "",
+                "image3": "",
+                "image4": ""
+            }
         }
     ]
 }

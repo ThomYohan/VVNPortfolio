@@ -1,15 +1,28 @@
 <template>
     <!-- <n-config-provider :theme="darkTheme"> -->
     <div class="navBar">
-        <n-button @click="theme = darkTheme">
+        <!-- <n-button @click="theme = darkTheme">
             Dark
         </n-button>
         <n-button @click="theme = null">
             Light
-        </n-button>
-        <router-link to="/">Home</router-link>
-        <router-link to="/About">About</router-link>
-        <router-link to="/Projects">Projects</router-link>
+        </n-button> -->
+        <router-link to="/">
+            <h2>Home</h2>
+        </router-link>
+        <router-link to="/About">
+            <h2>About</h2>
+        </router-link>
+        <router-link to="/Projects">
+            <h2>Projects</h2>
+        </router-link>
+        <n-space>
+            <n-switch size="medium">
+                <template #icon>
+                    🤔
+                </template>
+            </n-switch>
+        </n-space>
     </div>
     <!-- </n-config-provider> -->
 </template>

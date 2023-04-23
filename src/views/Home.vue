@@ -1,7 +1,7 @@
 <template>
     <!-- <n-config-provider :theme="!darkTheme"> -->
-        <div>weewoo</div>
-        <!-- <p>{{ greeting }}</p>
+    <div>weewoo</div>
+    <!-- <p>{{ greeting }}</p>
         <n-gradient-text :gradient="{
             deg: 180,
             from: 'rgb(85, 85, 85)',
@@ -31,7 +31,7 @@
             </template>
             Card Content
         </n-card> -->
-        <Tile />
+    <Tile />
     <!-- </n-config-provider> -->
 </template>
 

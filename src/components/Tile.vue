@@ -1,17 +1,23 @@
 <template>
-    <div>
-        <n-image width="200" height="100" src="../../public/GBAPurpleStack.png" />
-        <h3>Tile</h3>
+    <div v-for="data in Data.projects" :key="data.id">
+        <!-- <n-image width="200" height="100" src="../../public/GBAPurpleStack.png" /> -->
+        <h3>{{ data.name }}</h3>
+        <h4>{{ data.subheading }}</h4>
+        <!-- <n-image :src="data.thumbnail" /> -->
     </div>
 </template>
 
 
 <script lang="ts">
+import Data from "../data.json";
+
 export default {
     data() {
-        // return {
-        //     greeting: 'Hello Abwout'
-        // }
+        return {
+            // greeting: 'Hello Abwout'
+            // data: Data
+            Data
+        }
     }
 }
 </script>

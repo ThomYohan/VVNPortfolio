@@ -7,9 +7,9 @@
             <div>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 0.2 }">
-                    <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #F79256, #44FFD2, #5F1A37)">
-                        A Frontend Software Engineer
-                    </n-gradient-text>
+                    <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
+                        :animation-speed="0.5" :animation-direction="'alternate'">A Frontend Software
+                        Engineer</n-gradient-text>
                 </Motion>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 0.4 }">
@@ -27,8 +27,8 @@
             :transition="{ duration: 0.5, delay: 0.7 }">
             <n-button strong secondary type="warning">Resume</n-button>
         </Motion>
-
     </div>
+
     <div class="aboutContainer">
         <Motion v-for="(index, i) in [1, 2]" :key="i" :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
             :transition="{ delay: i * 0.2, type: 'spring', stiffness: 200, damping: 20 }">
@@ -55,7 +55,8 @@
     <Tile />
     <History />
     <div>
-        "I'm currently seeking a talented team to collaborate with. If you're looking for a skilled and dedicated individual to join your group, feel free to contact me. Let's create something great together!"
+        "I'm currently seeking a talented team to collaborate with. If you're looking for a skilled and dedicated individual
+        to join your group, feel free to contact me. Let's create something great together!"
     </div>
 </template>
 
@@ -91,6 +92,8 @@ export default defineComponent({
 </script>
 
 
-<style scoped>p {
+<style scoped>
+p {
     color: lightsalmon
-}</style>
+}
+</style>

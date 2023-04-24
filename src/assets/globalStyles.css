@@ -212,6 +212,25 @@ h4 {
     line-height: 1.05;
 }
 
+.n-gradient-text {
+    /* background: linear-gradient(90deg, #F79256, #44FFD2, #5F1A37); */
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: n-slide 5s linear infinite alternate;
+  }
+  
+  @keyframes n-slide {
+    from {
+      background-position: left;
+    }
+    to {
+      background-position: right;
+    }
+  }
+  
+
 .jdH2 {
     margin-top: 0px;
     margin-bottom: 16px;

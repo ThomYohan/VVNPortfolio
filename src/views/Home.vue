@@ -7,7 +7,7 @@
             <div>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 0.2 }">
-                    <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #E3B23C, #44FFD2, #5F1A37)">
+                    <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #F79256, #44FFD2, #5F1A37)">
                         A Frontend Software Engineer
                     </n-gradient-text>
                 </Motion>

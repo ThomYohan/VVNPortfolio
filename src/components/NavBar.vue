@@ -1,20 +1,11 @@
 <template>
-    <!-- <n-config-provider :theme="darkTheme"> -->
     <div class="navBar">
         <div>
             <h3>Orca</h3>
         </div>
         <div class="row">
             <div class="navBarTile" v-for="data in Data.routes" :key="data.id">
-                <!-- <n-button @click="theme = darkTheme">
-                        Dark
-                    </n-button>
-                    <n-button @click="theme = null">
-                        Light
-                    </n-button> -->
-                <!-- <n-menu> -->
                 <router-link class="jdNav" :to="data.route">{{ data.name }}</router-link>
-                <!-- </n-menu> -->
             </div>
             <n-space>
                 <n-switch size="medium">
@@ -25,7 +16,6 @@
             </n-space>
         </div>
     </div>
-    <!-- </n-config-provider> -->
 </template>
 
 

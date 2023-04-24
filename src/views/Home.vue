@@ -30,18 +30,29 @@
 
     </div>
     <div class="aboutContainer">
-        <div>
-            <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3">Frontend Focus</h2>
-            </h2>
-        </div>
-        <h4 class="jdH5">Welcome to my personal website! I'm Thomas Yohannes, a Frontend Software Engineer with a passion
-            for building beautiful and functional web experiences. Using cutting-edge technologies such as Vue 3, Vite,
-            Naive UI, React, HTML, CSS, and TypeScript, I specialize in creating dynamic and engaging websites that
-            captivate users and deliver results. With expertise in Motion One, I can add fluid animations and seamless
-            transitions to elevate your site to the next level. Whether you're looking to build a web app from scratch or
-            need help optimizing an existing site, I'm here to help. Let's collaborate and create something amazing together
-            that reflects the latest trends and best practices in the industry!</h4>
+        <Motion v-for="(index, i) in [1, 2]" :key="i" :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
+            :transition="{ delay: i * 0.2, type: 'spring', stiffness: 200, damping: 20 }">
+            <div v-if="index === 1">
+                <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3">Frontend Focus</h2>
+                </h2>
+            </div>
+            <div v-else>
+                <h4 class="jdH5">Welcome to my personal website! I'm Thomas Yohannes, a Frontend Software Engineer with a
+                    passion
+                    for building beautiful and functional web experiences. Using cutting-edge technologies such as Vue 3,
+                    Vite,
+                    Naive UI, React, HTML, CSS, and TypeScript, I specialize in creating dynamic and engaging websites that
+                    captivate users and deliver results. With expertise in Motion One, I can add fluid animations and
+                    seamless
+                    transitions to elevate your site to the next level. Whether you're looking to build a web app from
+                    scratch or
+                    need help optimizing an existing site, I'm here to help. Let's collaborate and create something amazing
+                    together
+                    that reflects the latest trends and best practices in the industry!</h4>
+            </div>
+        </Motion>
     </div>
+
     <Tile />
     <History />
 </template>
@@ -78,8 +89,6 @@ export default defineComponent({
 </script>
 
 
-<style scoped>
-p {
+<style scoped>p {
     color: lightsalmon
-}
-</style>
+}</style>

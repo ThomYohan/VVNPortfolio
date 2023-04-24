@@ -1,6 +1,5 @@
 <template>
     <!-- <n-config-provider :theme="!darkTheme"> -->
-    <div>weewoo</div>
     <!-- <p>{{ greeting }}</p>
         <n-gradient-text :gradient="{
             deg: 180,
@@ -31,7 +30,7 @@
             </template>
             Card Content
         </n-card> -->
-    <div class="landingContainer">
+    <div class="jdLandingContainer">
         <div>
             <h1>Hello I'm <h1>Thomas</h1>
             </h1>
@@ -54,7 +53,7 @@
     </div>
     <Tile />
     <History />
-    <!-- <Footer /> -->
+    <Footer />
     <!-- </n-config-provider> -->
 </template>
 

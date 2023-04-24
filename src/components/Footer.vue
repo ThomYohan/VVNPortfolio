@@ -8,7 +8,6 @@
 
 
 <script lang="ts">
-import { defineComponent } from 'vue'
 import Data from "../data.json"
 
 // export default defineComponent({
@@ -18,13 +17,13 @@ import Data from "../data.json"
 //         }
 //     },
 // })
-export default defineComponent({
+export default {
     setup() {
         return {
             Data
         }
     }
-})
+}
 </script>
 
 

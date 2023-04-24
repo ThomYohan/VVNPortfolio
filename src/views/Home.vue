@@ -1,24 +1,4 @@
 <template>
-    <!-- <n-config-provider :theme="!darkTheme"> -->
-    <br>
-    <!-- <div class="jdLandingContainer">
-        <div>
-            <h1 class="jdH1">Hello I'm Thomas</h1>
-            <div>
-                <n-gradient-text class="jdH1" 
-                gradient="linear-gradient(90deg, #E3B23C, #44FFD2, #5F1A37)">
-                    A Frontend Software Engineer
-                </n-gradient-text>
-                <h1 class="jdH1"> based in Wichita, Kansas</h1>
-            </div>
-        </div>
-        <div>
-            <h2 class="jdH2">Placeholder text, click on the resume</h2>
-        </div>
-        <n-button strong secondary type="warning">
-            Resume
-        </n-button>
-    </div> -->
     <div class="jdLandingContainer">
         <div>
             <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
@@ -64,7 +44,6 @@
     </div>
     <Tile />
     <History />
-    <!-- </n-config-provider> -->
 </template>
 
 

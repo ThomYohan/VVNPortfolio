@@ -1,6 +1,4 @@
 <template>
-  <!-- <main></main> -->
-  <!-- <Suspense> -->
   <n-config-provider :theme-overrides="themeOverrides">
     <div class="webContainer">
       <NavBar />
@@ -8,13 +6,6 @@
       <Footer />
     </div>
   </n-config-provider>
-  <!-- <n-config-provider #Fallback>
-
-    </n-config-provider>
-  </Suspense> -->
-  <!-- <Suspense #Fallback>
-
-  </Suspense> -->
   <!-- <n-config-provider :theme="darkTheme"> -->
 </template>
 
@@ -24,10 +15,6 @@ import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
 
-/**
- * Use this for type hints under js file
- * @type import('naive-ui').GlobalThemeOverrides
- */
 const themeOverrides: GlobalThemeOverrides = {
   common: {
     primaryColor: '#44FFD2',
@@ -43,14 +30,6 @@ const themeOverrides: GlobalThemeOverrides = {
   Button: {
     textColor: '#FF0000'
   },
-  // Select: {
-  //   peers: {
-  //     InternalSelection: {
-  //       textColor: '#FF0000'
-  //     }
-  //   }
-  // }
-  // ...
 }
 </script>
 

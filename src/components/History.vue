@@ -1,5 +1,5 @@
 <template>
-    <div class="history">
+    <div class="historyContainer">
         <div>
             <h3>History</h3>
             <div v-for="data in Data.history" :key="data.id">

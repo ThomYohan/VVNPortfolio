@@ -1,5 +1,5 @@
 <template>
-    <div class="webContainer">
+    <div class="projectsContainer">
         <div>pwojects</div>
         <p>{{ greeting }}</p>
     </div>

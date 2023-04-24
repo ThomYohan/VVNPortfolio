@@ -29,9 +29,30 @@ body {
     padding: 0;
 }
 
-.webContainer {
+.projectsContainer {
     max-width: 1200px;
     width: 1200px;
+}
+
+.landingContainer {
+    height: 420px;
+    padding: 100px 3%;
+}
+
+.aboutContainer {
+    height: 700px;
+    padding: 100px 3%;
+}
+
+.historyContainer {
+    height: 600px;
+    padding: 140px 3%;
+}
+
+.footerContainer {
+    height: 70px;
+    /* margin: 100px 3%; */
+    /* padding: 100px 3%; */
 }
 
 .navBar {
@@ -39,7 +60,8 @@ body {
     justify-content: space-between;
     /* flex-direction: row; */
     /* position: absolute; */
-    height: 150px;
+    height: 70px;
+    padding: 28px 4%;
     /* width: 100vw;
     position: fixed; */
     /* top: 0; */
@@ -55,14 +77,6 @@ body {
 
 }
 
-.landingContainer {
-    height: 420px;
-}
-
-.aboutContainer {
-    height: 700px;
-}
-
 .tileList {
     display: flex;
     justify-content: center;
@@ -74,8 +88,6 @@ body {
 }
 
 .tileImg {
-    /* max-height: 200px;
-    max-width: 200px; */
     height: 450px;
     width: 350px;
 }
@@ -85,6 +97,7 @@ body {
     width: 350px;
     border-radius: 24px;
     border: 2px solid grey;
+    margin: 1%;
     /* height: 400px;
     width: 300px */
 }

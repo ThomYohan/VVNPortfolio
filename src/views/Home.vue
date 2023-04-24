@@ -54,15 +54,15 @@
     </div>
     <Tile />
     <History />
-    <Footer />
+    <!-- <Footer /> -->
     <!-- </n-config-provider> -->
 </template>
 
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { darkTheme } from 'naive-ui'
-import type { GlobalTheme } from 'naive-ui'
+import { defineComponent } from 'vue'
+// import { darkTheme } from 'naive-ui'
+// import type { GlobalTheme } from 'naive-ui'
 // import { Icon } from '@vicons/utils'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
@@ -76,8 +76,8 @@ export default defineComponent({
     },
     setup() {
         return {
-            darkTheme,
-            theme: ref<GlobalTheme | null>(null)
+            // darkTheme,
+            // theme: ref<GlobalTheme | null>(null)
         }
     },
     data() {

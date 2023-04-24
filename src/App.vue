@@ -5,6 +5,7 @@
     <div class="webContainer">
       <NavBar />
       <router-view />
+      <Footer />
     </div>
   </n-config-provider>
   <!-- <n-config-provider #Fallback>
@@ -20,7 +21,8 @@
 
 <script setup lang="ts">
 import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
-// import NavBar from './components/NavBar.vue';
+import NavBar from './components/NavBar.vue';
+import Footer from './components/Footer.vue';
 
 /**
  * Use this for type hints under js file

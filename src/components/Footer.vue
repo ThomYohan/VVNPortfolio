@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="footerContainer">
         <div>
             <h3>Footer</h3>
         </div>
@@ -11,12 +11,19 @@
 import { defineComponent } from 'vue'
 import Data from "../data.json"
 
+// export default defineComponent({
+//     data() {
+//         return {
+//             Data
+//         }
+//     },
+// })
 export default defineComponent({
-    data() {
+    setup() {
         return {
             Data
         }
-    },
+    }
 })
 </script>
 

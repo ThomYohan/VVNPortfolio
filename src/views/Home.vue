@@ -1,40 +1,18 @@
 <template>
     <!-- <n-config-provider :theme="!darkTheme"> -->
-    <!-- <p>{{ greeting }}</p>
-        <n-gradient-text :gradient="{
-            deg: 180,
-            from: 'rgb(85, 85, 85)',
-            to: 'rgb(170, 170, 170)'
-        }">
-            Custom Color
-        </n-gradient-text>
-        <br>
-        <n-gradient-text gradient="linear-gradient(90deg, red 0%, green 50%, blue 100%)">
-            A Scribbled Color
-        </n-gradient-text>
-        <n-gradient-text :gradient="{
-                deg: 180,
-                from: 'rgb(85, 85, 85)',
-                to: 'rgb(170, 170, 170)'
-            }">
-            Custom Color
-        </n-gradient-text>
-        <br>
-        <n-gradient-text gradient="linear-gradient(90deg, red 0%, green 50%, blue 100%)">
-            A Scribbled Color
-        </n-gradient-text>
-        <n-card title="Card with Cover">
-            <template #cover>
-                <img src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg">
-                <img class="card-img" src="../assets/icons/slycoopy.png">
-            </template>
-            Card Content
-        </n-card> -->
+    <br>
     <div class="jdLandingContainer">
         <div>
-            <h1>Hello I'm <h1>Thomas</h1>
-            </h1>
-            <h2>A Frontend Software Engineer based in Wichita, Kansas</h2>
+            <h1 class="jdH1">Hello I'm Thomas</h1>
+            <div>
+                <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, red 0%, green 50%, blue 100%)">
+                    A Frontend Software Engineer
+                </n-gradient-text>
+                <h1 class="jdH1"> based in Wichita, Kansas</h1>
+            </div>
+        </div>
+        <div>
+            <h2 class="jdH2">Placeholder text, click on the resume</h2>
         </div>
         <n-button strong secondary type="warning">
             Resume
@@ -43,13 +21,10 @@
     </div>
     <div class="aboutContainer">
         <div>
-            <h2>Fullstack Developer with a <h2>Frontend Focus</h2>
+            <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3">Frontend Focus</h2>
             </h2>
         </div>
-        <h3> From under 10 person startups to over 100 person companies </h3>
-        <h4>1</h4>
-        <h5>2</h5>
-        <h6>3</h6>
+        <h4 class="jdH5">Welcome to my personal website! I'm Thomas Yohannes, a Frontend Software Engineer with a passion for building beautiful and functional web experiences. Using cutting-edge technologies such as Vue 3, Vite, Naive UI, React, HTML, CSS, and TypeScript, I specialize in creating dynamic and engaging websites that captivate users and deliver results. With expertise in Motion One, I can add fluid animations and seamless transitions to elevate your site to the next level. Whether you're looking to build a web app from scratch or need help optimizing an existing site, I'm here to help. Let's collaborate and create something amazing together that reflects the latest trends and best practices in the industry!</h4>
     </div>
     <Tile />
     <History />

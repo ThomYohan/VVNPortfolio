@@ -32,9 +32,12 @@ body {
     padding: 0;
 }
 
-/* .webContainer {
-    height: 100%;
-} */
+.webContainer {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .landingContainer {
     height: 420px;
@@ -64,6 +67,7 @@ body {
 .aboutContainer {
     height: 700px;
     padding: 100px 3%;
+    margin: 0;
     width: 800px;
     max-width: 100vw;
     display: flex;
@@ -85,6 +89,7 @@ body {
 .navBar {
     display: flex;
     justify-content: space-between;
+    /* position: absolute; */
     /* flex-direction: row; */
     /* position: absolute; */
     height: 70px;

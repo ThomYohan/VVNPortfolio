@@ -53,7 +53,6 @@
     </div>
     <Tile />
     <History />
-    <Footer />
     <!-- </n-config-provider> -->
 </template>
 

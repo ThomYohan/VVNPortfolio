@@ -52,9 +52,11 @@
             </div>
         </Motion>
     </div>
-
     <Tile />
     <History />
+    <div>
+        "I'm currently seeking a talented team to collaborate with. If you're looking for a skilled and dedicated individual to join your group, feel free to contact me. Let's create something great together!"
+    </div>
 </template>
 
 

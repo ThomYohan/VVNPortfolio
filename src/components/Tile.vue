@@ -2,13 +2,14 @@
     <div class="tileList" ref="sectionRef">
 
         <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
-            :transition="{ type: 'spring', stiffness: 200, damping: 20 }"  class="osTile" v-for="data in Data.projects" :key="data.id" ref="contentRef" style="opacity: 1;">
+            :transition="{ type: 'spring', stiffness: 200, damping: 20 }" class="osTile" v-for="data in Data.projects"
+            :key="data.id" ref="contentRef" style="opacity: 1;">
             <!-- <div> -->
-                <!-- <n-image class=osTileImg src="../../public/GBAPurpleStack.png" /> -->
-                <!-- <n-image class="tileImg" :src="data.thumbnail" /> -->
-                <img class=osTileImg src="/GBAPurpleStack.png" />
-                <h3 class="jdH4">{{ data.name }}</h3>
-                <h4 class="jdH5">{{ data.subheading }}</h4>
+            <!-- <n-image class=osTileImg src="../../public/GBAPurpleStack.png" /> -->
+            <!-- <n-image class="tileImg" :src="data.thumbnail" /> -->
+            <img class=osTileImg src="/GBAPurpleStack.png" />
+            <h3 class="jdH4">{{ data.name }}</h3>
+            <h4 class="jdH5">{{ data.subheading }}</h4>
             <!-- </div> -->
         </Motion>
     </div>
@@ -21,7 +22,8 @@ import Data from "../data.json";
 import { Motion, Presence } from "motion/vue"
 // import { inView, animate } from "motion";
 
-export default {
+// export default {
+export default (await import('vue')).defineComponent({
     components: {
         Motion,
         Presence,
@@ -52,7 +54,7 @@ export default {
             show
         };
     }
-}
+})
 </script>
 
 

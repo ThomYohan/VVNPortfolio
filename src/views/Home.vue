@@ -28,7 +28,6 @@
             <n-button strong secondary type="warning">Resume</n-button>
         </Motion>
     </div>
-
     <div class="aboutContainer">
         <Motion v-for="(index, i) in [1, 2]" :key="i" :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
             :transition="{ delay: i * 0.2, type: 'spring', stiffness: 200, damping: 20 }">
@@ -57,7 +56,7 @@
     <div class="reachContainer" ref="reachContainer">
         <Presence>
             <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.5 }">
-            <!-- <Motion :initial="{ opacity: 0, y: 50 }" :animate="{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }"> -->
+                <!-- <Motion :initial="{ opacity: 0, y: 50 }" :animate="{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }"> -->
                 <div class="reachLinkContainer">
                     <div class="reachLink">
                         <h3 class="jdH6">
@@ -81,6 +80,7 @@ import { defineComponent } from 'vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
+// import { inView, animate } from "motion"
 
 
 export default defineComponent({
@@ -92,36 +92,7 @@ export default defineComponent({
         Presence
     },
     setup() {
-
-
-        // const isVisible = ref(false)
-        // const reachContainer = ref(null)
-
-        // const handleScroll = () => {
-        //     if (!isVisible.value && reachContainer.value && reachContainer.value.getBoundingClientRect().top < window.innerHeight * 0.8) {
-        //         isVisible.value = true
-        //     }
-        //     if (isVisible.value && reachContainer.value && reachContainer.value.getBoundingClientRect().top > window.innerHeight) {
-        //         isVisible.value = false
-        //     }
-        // }
-
-        // watch(isVisible, (newVal, oldVal) => {
-        //     if (newVal !== oldVal) {
-        //         if (newVal) {
-        //             // Play animation on scroll into view
-        //             console.log('Play animation')
-        //         } else {
-        //             // Play animation on scroll out of view
-        //             console.log('Reverse animation')
-        //         }
-        //     }
-        // })
-
-        // window.addEventListener('scroll', handleScroll)
-
         return {
-            // isVisible,
             // reachContainer
         }
     },

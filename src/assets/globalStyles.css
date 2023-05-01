@@ -129,8 +129,24 @@ body {
 
 .footerContainer {
     height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: space-between; */
     /* margin: 100px 3%; */
-    /* padding: 100px 3%; */
+    padding: 100px 3%;
+}
+
+.footerIconContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footerIcon {
+    padding: 10px;
+    /* font-size: 24px; */
 }
 
 .tileList {
@@ -287,4 +303,31 @@ h4 {
     /* letter-spacing: 0.01em; */
     line-height: 1.9;
     letter-spacing: 0.02em;
+}
+
+.jdH6 {
+    color: #0d0e10;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.reachLinkContainer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #0d0e10;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.reachContainer {
+    padding: 100px 0%;
+}
+.reachLink {
+    max-width: 620px;
+    margin-right: auto;
+    margin-left: auto;
 }

@@ -5,11 +5,8 @@
             :transition="{ type: 'spring', stiffness: 200, damping: 20 }"  class="osTile" v-for="data in Data.projects" :key="data.id" ref="contentRef" style="opacity: 1;">
             <!-- <div> -->
                 <!-- <n-image class=osTileImg src="../../public/GBAPurpleStack.png" /> -->
-                <div v-if="show" class="fade-up">
-                    <p>Placeholder text</p>
-                </div>
-                <!-- <img class=osTileImg src="../../public/GBAPurpleStack.png" /> -->
                 <!-- <n-image class="tileImg" :src="data.thumbnail" /> -->
+                <img class=osTileImg src="/GBAPurpleStack.png" />
                 <h3 class="jdH4">{{ data.name }}</h3>
                 <h4 class="jdH5">{{ data.subheading }}</h4>
             <!-- </div> -->

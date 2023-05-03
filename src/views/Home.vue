@@ -8,7 +8,7 @@
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 0.2 }">
                     <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
-                        :animation-speed="0.5" :animation-direction="'alternate'">A Frontend Software
+                        :animation-speed="1" :animation-direction="'alternate'">A Frontend Software
                         Engineer</n-gradient-text>
                 </Motion>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
@@ -17,7 +17,7 @@
                 </Motion>
             </div>
         </div>
-        <div>
+        <!-- <div>
             <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                 :transition="{ duration: 0.5, delay: 0.6 }">
                 <h2 class="jdH2">Placeholder text, click on the resume</h2>
@@ -26,7 +26,7 @@
         <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
             :transition="{ duration: 0.5, delay: 0.7 }">
             <n-button strong secondary type="warning">Resume</n-button>
-        </Motion>
+        </Motion> -->
     </div>
     <div class="aboutContainer">
         <Motion v-for="(index, i) in [1, 2]" :key="i" :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
@@ -53,15 +53,17 @@
     </div>
     <Tile />
     <History />
-    <div class="reachContainer" ref="reachContainer">
+    <div ref="target" class="reachContainer">
         <Presence>
             <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.5 }">
                 <!-- <Motion :initial="{ opacity: 0, y: 50 }" :animate="{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }"> -->
                 <div class="reachLinkContainer">
                     <div class="reachLink">
                         <h3 class="jdH6">
-                            I'm currently seeking a talented team to collaborate with. If you're looking for a skilled and
-                            dedicated individual to join your group, feel free to contact me. Let's create something great
+                            I'm currently seeking a talented team to collaborate with. If you're looking for a skilled
+                            and
+                            dedicated individual to join your group, feel free to contact me. Let's create something
+                            great
                             together!
                         </h3>
                     </div>
@@ -80,7 +82,6 @@ import { defineComponent } from 'vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
-// import { inView, animate } from "motion"
 
 
 export default defineComponent({
@@ -92,15 +93,12 @@ export default defineComponent({
         Presence
     },
     setup() {
-        return {
-            // reachContainer
-        }
     },
-    data() {
-        return {
-            greeting: "homie"
-        }
-    }
+    // data() {
+    //     return {
+    //         greeting: "homie"
+    //     }
+    // }
 })
 </script>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="navBar">
         <div>
-            <h3>Orca</h3>
+            <router-link class="jdNav" :to="Data.routes[0].route">TY</router-link>
         </div>
         <div class="row">
             <div class="navBarTile" v-for="data in Data.routes" :key="data.id">

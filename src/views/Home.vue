@@ -26,8 +26,8 @@
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.7, delay: 3.4 }">
                     <!-- <h1 class="jdH1">based in Wichita, KS</h1> -->
-                    <h1 class="jdH1">
-                        <Icon size="48" style="color: red;">
+                    <h1 class="jdH3">
+                        <Icon size="24" style="color: red;">
                             <Location12Filled />
                         </Icon> Wichita, KS
                     </h1>
@@ -39,7 +39,7 @@
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 3.4 }">
                     <lottie-player autoplay loop mode="normal"
-                        src="https://assets3.lottiefiles.com/packages/lf20_iombyzfq.json" style="width: 400px">
+                        src="https://assets3.lottiefiles.com/packages/lf20_iombyzfq.json" style="width: 450px">
                     </lottie-player>
                 </Motion>
             </div>

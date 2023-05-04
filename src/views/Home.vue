@@ -25,7 +25,12 @@
                 </Motion>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.7, delay: 3.4 }">
-                    <h1 class="jdH1">based in Wichita, KS</h1>
+                    <!-- <h1 class="jdH1">based in Wichita, KS</h1> -->
+                    <h1 class="jdH1">
+                        <Icon size="48" style="color: red;">
+                            <Location12Filled />
+                        </Icon> Wichita, KS
+                    </h1>
                 </Motion>
             </div>
             <div class="landingAnimationCont">
@@ -101,6 +106,8 @@ import { defineComponent, ref } from 'vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
+import { Icon } from '@vicons/utils'
+import { Location12Filled } from "@vicons/fluent";
 import "@lottiefiles/lottie-player";
 
 export default defineComponent({
@@ -109,7 +116,9 @@ export default defineComponent({
         History,
         Tile,
         Motion,
-        Presence
+        Presence,
+        Icon,
+        Location12Filled
     },
     setup() {
         // const lastEl = ref<HTMLElement | null>(null);

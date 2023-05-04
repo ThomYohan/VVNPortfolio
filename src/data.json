@@ -21,19 +21,19 @@
             "id": 1,
             "name": "Resume",
             "link": "",
-            "icon": ""
+            "icon": "../assets/icons/Linkedin.png"
         },
         {
             "id": 2,
             "name": "LinkedIn",
             "link": "@assets/icons/LinkedIn.png",
-            "icon": ""
+            "icon": "/assets/icons/Linkedin.png"
         },
         {
             "id": 3,
             "name": "Github",
             "link": "@assets/icons/Github.png",
-            "icon": ""
+            "icon": "./assets/icons/Github.png"
         },
         {
             "id": 4,

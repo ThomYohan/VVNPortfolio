@@ -27,7 +27,7 @@
                     :transition="{ duration: 0.7, delay: 3.4 }">
                     <!-- <h1 class="jdH1">based in Wichita, KS</h1> -->
                     <h1 class="jdH3">
-                        <Icon size="24" style="color: red;">
+                        <Icon size="32" style="color: red;">
                             <Location12Filled />
                         </Icon> Wichita, KS
                     </h1>

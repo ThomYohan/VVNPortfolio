@@ -4,14 +4,14 @@
         <div>
             <div class="landingNameCont">
                 <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }"> -->
-                <lottie-player autoplay loop mode="normal" speed="1.5"
+                <lottie-player autoplay mode="normal" speed="1.5"
                     src="https://assets1.lottiefiles.com/packages/lf20_llbjwp92qL.json" style="width: 350px">
                 </lottie-player>
                 <!-- </Motion> -->
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.7, delay: 2 }">
                     <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
-                        :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Y</n-gradient-text>
+                        :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Yohannes</n-gradient-text>
                 </Motion>
             </div>
             <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
@@ -25,7 +25,7 @@
                 </Motion>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.7, delay: 3.4 }">
-                    <h1 class="jdH1">Based in Wichita, KS</h1>
+                    <h1 class="jdH1">based in Wichita, KS</h1>
                 </Motion>
             </div>
             <div class="landingAnimationCont">
@@ -112,19 +112,19 @@ export default defineComponent({
         Presence
     },
     setup() {
-        const lastEl = ref<HTMLElement | null>(null);
+        // const lastEl = ref<HTMLElement | null>(null);
 
-        function scrollToElement(): void {
-            const el = lastEl.value;
-            if (el) {
-                el.scrollIntoView({ behavior: "smooth" });
-            }
-        }
+        // function scrollToElement(): void {
+        //     const el = lastEl.value;
+        //     if (el) {
+        //         el.scrollIntoView({ behavior: "smooth" });
+        //     }
+        // }
 
-        return {
-            lastEl,
-            scrollToElement,
-        };
+        // return {
+        //     lastEl,
+        //     scrollToElement,
+        // };
     },
     // data() {
     //     return {

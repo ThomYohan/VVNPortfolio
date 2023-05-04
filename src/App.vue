@@ -3,7 +3,7 @@
     <div class="webContainer">
       <NavBar ref="navbar" @scrollTo="scrollToRef" />
       <router-view />
-      <Footer />
+      <!-- <Footer /> -->
     </div>
   </n-config-provider>
   <!-- <n-config-provider :theme="darkTheme"> -->
@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
 import NavBar from './components/NavBar.vue';
-import Footer from './components/Footer.vue';
+// import Footer from './components/Footer.vue';
 import { ref, onMounted } from 'vue';
 
 

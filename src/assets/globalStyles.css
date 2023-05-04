@@ -72,11 +72,11 @@ body {
 
 .navBarTile {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     /* height: 50px; */
-    width: 90px;
+    width: 200px;
 
 }
 
@@ -103,8 +103,8 @@ body {
 
 .landingNameCont {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .landingAnimationCont {
@@ -114,9 +114,7 @@ body {
     transform: rotate(5deg);
 }
 
-.landingTextContainer {
-    
-}
+.landingTextContainer {}
 
 /* .projectsContainer {
     max-width: 1200px;
@@ -155,30 +153,28 @@ body {
 .osTileImg {
     height: 300px;
     width: 300px;
-    /* height: 450px;
-    width: 350px; */
     margin: 0;
-    /* padding: 0; */
     /* box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05); */
 }
 
 .osTile {
     height: 375px;
     width: 300px;
-    /* height: 450px;
-    width: 350px; */
-    max-width: 100%;
-    max-height: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     border-radius: 24px;
-    /* border: 2px solid grey; */
     padding: 10px;
     margin: 2%;
-    /* margin: 5% 5%; */
     /* box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05); */
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.osTile:hover {
+    /* background-image: linear-gradient(90deg, #3d87ff, #be3dff, #7e3dff, #3a86ff);
+    box-shadow: 0 4px 15px 0 #be3dff;
+    transition: all .5s ease-in-out;
+    transform: all .5s ease-in-out; */
 }
 
 .tileText {
@@ -382,8 +378,7 @@ h4 {
 
 @media (min-width: 1500px) {
 
-    .jdLandingContainer {
-    }
+    .jdLandingContainer {}
 }
 
 @media (min-width: 1000px) and (max-width: 1500px) {
@@ -396,8 +391,7 @@ h4 {
         width: 100%;
     }
 
-    .jdLandingContainer {
-    }
+    .jdLandingContainer {}
 }
 
 @media (max-width: 1000px) {
@@ -407,8 +401,7 @@ h4 {
         margin: 0;
     }
 
-    body {
-    }
+    body {}
 
     .jdLandingContainer {
         max-width: 100vw;
@@ -430,7 +423,7 @@ h4 {
         align-items: center;
         transform: none;
     }
-    
+
     .historyContainer {
         width: 100vw;
         max-width: 100vw;

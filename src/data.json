@@ -16,6 +16,32 @@
             "route": "/About"
         }
     ],
+    "links": [
+        {
+            "id": 1,
+            "name": "Resume",
+            "link": "",
+            "icon": ""
+        },
+        {
+            "id": 2,
+            "name": "LinkedIn",
+            "link": "@assets/icons/LinkedIn.png",
+            "icon": ""
+        },
+        {
+            "id": 3,
+            "name": "Github",
+            "link": "@assets/icons/Github.png",
+            "icon": ""
+        },
+        {
+            "id": 4,
+            "name": "Github",
+            "link": "",
+            "icon": ""
+        }
+    ],
     "timeline": [
         {
             "id": 1,

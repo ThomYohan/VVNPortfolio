@@ -4,8 +4,13 @@
             <Motion :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
                 <router-link class="jdNav" :to="Data.routes[0].route">TY</router-link>
             </Motion>
-            <Motion :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
+            <Motion class="navBarTile" :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
                 <a class="jdNav">Resume</a>
+                <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png" />
+                <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png" />
+                <Icon size="24">
+                    <Mail24Regular />
+                </Icon>
             </Motion>
         </div>
         <!-- <div class="row">
@@ -23,12 +28,16 @@ import { defineComponent } from 'vue'
 // import type { GlobalTheme } from 'naive-ui'
 import Data from "../data.json"
 import { Motion, Presence } from "motion/vue"
+import { Icon } from '@vicons/utils'
+import { Mail24Regular } from "@vicons/fluent";
 
 export default defineComponent({
     name: 'NavBar',
     components: {
         Motion,
-        Presence
+        Presence,
+        Icon,
+        Mail24Regular
     },
     data() {
         return {

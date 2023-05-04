@@ -26,13 +26,13 @@
         {
             "id": 2,
             "name": "LinkedIn",
-            "link": "@assets/icons/LinkedIn.png",
+            "link": "https://www.linkedin.com/in/thomasgyohannes/",
             "icon": "/assets/icons/Linkedin.png"
         },
         {
             "id": 3,
             "name": "Github",
-            "link": "@assets/icons/Github.png",
+            "link": "https://github.com/ThomYohan",
             "icon": "./assets/icons/Github.png"
         },
         {

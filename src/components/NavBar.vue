@@ -8,10 +8,22 @@
             <Motion class="navBarTile" :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }"
                 :transition="{ duration: 0.5, delay: 5 }">
                 <a class="jdNav">Resume</a>
-                <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png" />
-                <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png" />
+                <!-- <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png" />
+                <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png" /> -->
                 <Icon size="24">
-                    <Mail24Regular />
+                    <a class="center" :href="Data.links[1].link" target="_blank">
+                        <LogoLinkedin />
+                    </a>
+                </Icon>
+                <Icon size="24">
+                    <a class="center" :href="Data.links[2].link" target="_blank">
+                        <LogoGithub />
+                    </a>
+                </Icon>
+                <Icon size="24">
+                    <a class="center" target="_blank">
+                        <Mail24Regular />
+                    </a>
                 </Icon>
             </Motion>
         </div>
@@ -26,6 +38,7 @@ import { defineComponent } from 'vue'
 import Data from "../data.json"
 import { Motion, Presence } from "motion/vue"
 import { Icon } from '@vicons/utils'
+import { LogoGithub, LogoLinkedin } from "@vicons/ionIcons4";
 import { Mail24Regular, Location12Filled, } from "@vicons/fluent";
 
 export default defineComponent({
@@ -36,8 +49,8 @@ export default defineComponent({
         Icon,
         Mail24Regular,
         Location12Filled,
-        // Github,
-        // Linkedin
+        LogoGithub,
+        LogoLinkedin
 
     },
     data() {

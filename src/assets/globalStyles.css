@@ -284,6 +284,10 @@ h4 {
     animation: n-slide 5s linear infinite alternate;
 }
 
+a {
+    color: black;
+}
+
 @keyframes n-slide {
     from {
         background-position: left;

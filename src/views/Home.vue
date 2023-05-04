@@ -2,21 +2,40 @@
     <div id="landing" ref="landing" class="jdLandingContainer">
         <!-- <div class="landingTextContainer"> -->
         <div>
-            <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
+            <div class="landingNameCont">
+                <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }"> -->
+                <lottie-player autoplay loop mode="normal" speed="1.5"
+                    src="https://assets1.lottiefiles.com/packages/lf20_llbjwp92qL.json" style="width: 350px">
+                </lottie-player>
+                <!-- </Motion> -->
+                <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
+                    :transition="{ duration: 0.7, delay: 2 }">
+                    <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
+                        :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Y</n-gradient-text>
+                </Motion>
+            </div>
+            <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
                 <h1 class="jdH1">Hello! <n-gradient-text gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
                         :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Yohannes</n-gradient-text></h1>
-            </Motion>
+            </Motion> -->
             <div>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
-                    :transition="{ duration: 0.5, delay: 0.2 }">
-                    <!-- <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
-                        :animation-speed="1" :animation-direction="'alternate'">Frontend Software
-                        Engineer</n-gradient-text> -->
+                    :transition="{ duration: 0.7, delay: 2.7 }">
                     <h1 class="jdH1">Frontend Software Engineer</h1>
                 </Motion>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
-                    :transition="{ duration: 0.5, delay: 0.4 }">
-                    <h1 class="jdH1"> based in Wichita, Kansas</h1>
+                    :transition="{ duration: 0.7, delay: 3.4 }">
+                    <h1 class="jdH1">Based in Wichita, KS</h1>
+                </Motion>
+            </div>
+            <div class="landingAnimationCont">
+                <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
+                    :transition="{ duration: 0.5, delay: 2.9 }"> -->
+                <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
+                    :transition="{ duration: 0.5, delay: 3.4 }">
+                    <lottie-player autoplay loop mode="normal"
+                        src="https://assets3.lottiefiles.com/packages/lf20_iombyzfq.json" style="width: 400px">
+                    </lottie-player>
                 </Motion>
             </div>
         </div>
@@ -82,6 +101,7 @@ import { defineComponent, ref } from 'vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
+import "@lottiefiles/lottie-player";
 
 export default defineComponent({
     name: 'Home',

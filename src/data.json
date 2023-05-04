@@ -106,10 +106,11 @@
         {
             "id": "1",
             "type": "C",
-            "name": "Portfolio",
+            "name": "New Portfolio",
             "subheading": "Current Portfolio",
             "techStack": "Vue3, Vite, Typescript, Naive Ui, Motion One, Pinia, Sass",
             "description": "",
+            "lottie": "https://assets2.lottiefiles.com/packages/lf20_zxau6gfz.json",
             "details": {
                 "info1": "",
                 "info2": "",
@@ -133,6 +134,7 @@
             "subheading": "Mobile App",
             "techStack": "MERN",
             "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI",
+            "lottie": "https://assets4.lottiefiles.com/packages/lf20_zEqK5rHxBV.json",
             "details": {
                 "info1": "Collaborated in ground-level development of an app, from start to app store submission",
                 "info2": "Created the frontend of an app that allows you to message, co-create, and coordinate real life facilities that also utilize the apps architecture to streamline the customer experience",
@@ -156,6 +158,7 @@
             "subheading": "Mobile App",
             "techStack": "MERN",
             "description": "Mobile app for Speakfully",
+            "lottie": "https://assets4.lottiefiles.com/packages/lf20_blmn2rwe.json",
             "details": {
                 "info1": "Collaborated with the CTO, Principal Software Engineer, & UI/UX Designer to release a web app connected to our existing architecture",
                 "info2": "Created the frontend of an app that allows you to document, submit, and track workplace experiences",
@@ -179,6 +182,7 @@
             "subheading": "Website",
             "techStack": "MEVN",
             "description": "Front facing website for Speakfully",
+            "lottie": "https://assets9.lottiefiles.com/packages/lf20_ksrcyxgn.json",
             "details": {
                 "info1": "Utilized front end framework/languages to provide route-based, conditionally rendered content to guide customers from first-click to POS",
                 "info2": "Utilized Bootstrap, HTML, & CSS to consolidate and maintain site-wide styling",
@@ -202,6 +206,7 @@
             "subheading": "Full CRUD Website",
             "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
             "description": "",
+            "lottie": "https://assets4.lottiefiles.com/private_files/lf30_rXyqXj.json",
             "details": {
                 "info1": "",
                 "info2": "",
@@ -225,6 +230,7 @@
             "subheading": "Full CRUD Website",
             "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
             "description": "",
+            "lottie": "https://assets2.lottiefiles.com/private_files/lf30_Gh7uJv.json",
             "details": {
                 "info1": "",
                 "info2": "",

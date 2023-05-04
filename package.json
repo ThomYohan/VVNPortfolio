@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/lottie-player": "^1.7.1",
     "motion": "^10.15.5",
     "pinia": "^2.0.35",
     "vue": "^3.2.47",

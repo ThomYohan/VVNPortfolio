@@ -1,15 +1,18 @@
 <template>
-    <div class="jdLandingContainer">
+    <div id="landing" ref="landing" class="jdLandingContainer">
+        <!-- <div class="landingTextContainer"> -->
         <div>
             <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
-                <h1 class="jdH1">Hey! I'm Thomas</h1>
+                <h1 class="jdH1">Hello! <n-gradient-text gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
+                        :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Yohannes</n-gradient-text></h1>
             </Motion>
             <div>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 0.2 }">
-                    <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
-                        :animation-speed="1" :animation-direction="'alternate'">A Frontend Software
-                        Engineer</n-gradient-text>
+                    <!-- <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
+                        :animation-speed="1" :animation-direction="'alternate'">Frontend Software
+                        Engineer</n-gradient-text> -->
+                    <h1 class="jdH1">Frontend Software Engineer</h1>
                 </Motion>
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 0.4 }">
@@ -28,7 +31,7 @@
             <n-button strong secondary type="warning">Resume</n-button>
         </Motion> -->
     </div>
-    <div class="aboutContainer">
+    <div id="about" ref="about" class="aboutContainer">
         <Motion v-for="(index, i) in [1, 2]" :key="i" :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
             :transition="{ delay: i * 0.2, type: 'spring', stiffness: 200, damping: 20 }">
             <div v-if="index === 1">
@@ -51,22 +54,19 @@
             </div>
         </Motion>
     </div>
-    <Tile />
-    <History />
-    <div ref="target" class="reachContainer">
+    <Tile id="tiles" ref="tiles" />
+    <History id="history" ref="history" />
+    <div id="reach" ref="reach" class="reachContainer">
         <Presence>
             <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.5 }">
-                <!-- <Motion :initial="{ opacity: 0, y: 50 }" :animate="{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }"> -->
-                <div class="reachLinkContainer">
-                    <div class="reachLink">
-                        <h3 class="jdH6">
-                            I'm currently seeking a talented team to collaborate with. If you're looking for a skilled
-                            and
-                            dedicated individual to join your group, feel free to contact me. Let's create something
-                            great
-                            together!
-                        </h3>
-                    </div>
+                <div class="reachLink">
+                    <h3 class="jdH6">
+                        If you're looking for a skilled
+                        and
+                        dedicated individual to join your group, feel free to contact me. Let's create something
+                        great
+                        together!
+                    </h3>
                 </div>
             </Motion>
         </Presence>
@@ -75,7 +75,7 @@
 
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 // import { darkTheme } from 'naive-ui'
 // import type { GlobalTheme } from 'naive-ui'
 // import { Icon } from '@vicons/utils'
@@ -83,9 +83,8 @@ import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
 
-
 export default defineComponent({
-    // name: "reachContainer",
+    name: 'Home',
     components: {
         History,
         Tile,
@@ -93,6 +92,19 @@ export default defineComponent({
         Presence
     },
     setup() {
+        const lastEl = ref<HTMLElement | null>(null);
+
+        function scrollToElement(): void {
+            const el = lastEl.value;
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        return {
+            lastEl,
+            scrollToElement,
+        };
     },
     // data() {
     //     return {

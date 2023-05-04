@@ -16,6 +16,34 @@
             "route": "/About"
         }
     ],
+    "timeline": [
+        {
+            "id": 1,
+            "name": "Home",
+            "ref": "landing"
+        },
+        {
+            "id": 2,
+            "name": "About",
+            "ref": "about"
+        },
+        {
+            "id": 3,
+            "name": "Projects",
+            "ref": "tiles"
+        },
+        {
+            "id": 4,
+            "name": "History",
+            "ref": "history"
+        },
+        {
+            "id": 5,
+            "name": "Reach",
+            "ref": "reach"
+        }
+
+    ],
     "history": [
         {
             "id": "1",

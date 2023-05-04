@@ -1,41 +1,57 @@
 <template>
     <div class="navBar">
-        <div>
-            <router-link class="jdNav" :to="Data.routes[0].route">TY</router-link>
+        <div class="navBarContainer">
+            <Motion :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
+                <router-link class="jdNav" :to="Data.routes[0].route">TY</router-link>
+            </Motion>
+            <Motion :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
+                <a class="jdNav">Resume</a>
+            </Motion>
         </div>
-        <div class="row">
-            <div class="navBarTile" v-for="data in Data.routes" :key="data.id">
-                <router-link class="jdNav" :to="data.route">{{ data.name }}</router-link>
+        <!-- <div class="row">
+            <div class="navBarTile" v-for="data in Data.timeline" :key="data.id">
+                <a class="jdNav" href="#" @click.prevent="scrollTo(data.ref)">{{ data.name }}</a>
             </div>
-            <n-space>
-                <n-switch size="medium">
-                    <template #icon>
-                        🤔
-                    </template>
-                </n-switch>
-            </n-space>
-        </div>
+        </div> -->
     </div>
 </template>
 
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { darkTheme } from 'naive-ui'
-import type { GlobalTheme } from 'naive-ui'
+import { defineComponent } from 'vue'
+// import { darkTheme } from 'naive-ui'
+// import type { GlobalTheme } from 'naive-ui'
 import Data from "../data.json"
+import { Motion, Presence } from "motion/vue"
 
 export default defineComponent({
-    setup() {
-        return {
-            darkTheme,
-            theme: ref<GlobalTheme | null>(null)
-        }
+    name: 'NavBar',
+    components: {
+        Motion,
+        Presence
     },
     data() {
         return {
             Data
         }
+    },
+    methods: {
+        scrollTo(ref: string) {
+            console.log(ref)
+            const element = this.$refs?.[ref] as HTMLElement | undefined;
+            // console.log(element)
+            if (element) {
+                this.$nextTick(() => {
+                    element.scrollIntoView({ behavior: "smooth" });
+                });
+            }
+        }
+    },
+    setup() {
+        // return {
+        //     darkTheme,
+        //     theme: ref<GlobalTheme | null>(null)
+        // }
     },
 })
 </script>

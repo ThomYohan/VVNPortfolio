@@ -17,14 +17,14 @@
 
 
 <script lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, defineComponent } from 'vue';
 import Data from "../data.json";
 import { Motion, Presence } from "motion/vue"
 import "@lottiefiles/lottie-player";
 // import { inView, animate } from "motion";
 
 // export default {
-export default (await import('vue')).defineComponent({
+export default defineComponent({
     components: {
         Motion,
         Presence,

@@ -6,7 +6,7 @@
                 <router-link class="jdNav" :to="Data.routes[0].route">TY</router-link>
             </Motion>
             <Motion class="navBarTile" :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }"
-                :transition="{ duration: 0.5, delay: 5 }">
+                :transition="{ duration: 0.5, delay: 5.25 }">
                 <a class="jdNav">Resume</a>
                 <!-- <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png" />
                 <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png" /> -->

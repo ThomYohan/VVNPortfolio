@@ -11,7 +11,7 @@
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.7, delay: 2 }">
                     <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
-                        :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Yohannes</n-gradient-text>
+                        :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Y</n-gradient-text>
                 </Motion>
             </div>
             <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }">

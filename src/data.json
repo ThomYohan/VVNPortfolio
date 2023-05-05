@@ -16,6 +16,24 @@
             "route": "/About"
         }
     ],
+    "roles": [
+        {
+            "id": 1,
+            "name": "Frontend Software Engineer"
+        },
+        {
+            "id": 2,
+            "name": "Full Stack Developer"
+        },
+        {
+            "id": 3,
+            "name": "Software Engineer"
+        },
+        {
+            "id": 4,
+            "name": "Software Developer"
+        }
+    ],
     "links": [
         {
             "id": 1,

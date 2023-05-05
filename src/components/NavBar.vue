@@ -2,11 +2,11 @@
     <div class="navBar">
         <div class="navBarContainer">
             <Motion :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }"
-                :transition="{ duration: 0.5, delay: 5 }">
-                <router-link class="jdNav" :to="Data.routes[0].route">TY</router-link>
+                :transition="{ duration: 0.5, delay: 4 }">
+                <router-link class="jdNav" style="margin-left: 10px;" :to="Data.routes[0].route">TY</router-link>
             </Motion>
             <Motion class="navBarTile" :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }"
-                :transition="{ duration: 0.5, delay: 5.25 }">
+                :transition="{ duration: 0.5, delay: 4.2 }">
                 <a class="jdNav">Resume</a>
                 <!-- <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png" />
                 <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png" /> -->

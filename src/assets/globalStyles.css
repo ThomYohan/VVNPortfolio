@@ -120,15 +120,16 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate; */
 }
+
 @keyframes changeFont {
     from {
-      font-size: 32px;
+        font-size: 32px;
     }
-  
+
     to {
-      font-size: 35px;
+        font-size: 35px;
     }
-  }
+}
 
 .landingTextContainer {}
 
@@ -139,14 +140,23 @@ body {
 
 .aboutContainer {
     height: 500px;
-    padding: 100px 3%;
+    padding: 100px 3% 0 3%;
+    /* padding: 100px 3%; */
     margin: 0;
     width: 860px;
     /* width: 1060px; */
     max-width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+.historyContainer {
+    /* height: 600px; */
+    width: 860px;
+    padding: 100px 3% 100px 3%;
+    /* padding: 75px 3% 140px 3%; */
+    /* padding: 140px 3%; */
 }
 
 .tileList {
@@ -207,12 +217,6 @@ body {
     border: 2px solid grey;
     margin: 5%;
 } */
-
-.historyContainer {
-    /* height: 600px; */
-    width: 860px;
-    padding: 140px 3%;
-}
 
 .footerContainer {
     height: 70px;
@@ -430,12 +434,14 @@ a {
         padding: 0;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .landingNameCont {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        max-width: 100vw;
+        /* align-items: center; */
     }
 
     .landingAnimationCont {
@@ -446,14 +452,18 @@ a {
     }
 
     .historyContainer {
-        width: 100vw;
+        /* width: 100vw; */
         max-width: 100vw;
         margin: 3% 0;
         /* padding: 3% 0; */
     }
 }
 
-@media (min-width: 300px) and (max-width: 800px) {
+@media (min-width: 500px) and (max-width: 800px) {
+    .jdLandingContainer {
+        /* margin: 70px 0 120px 0; */
+    }
+
     .aboutContainer {
         padding: 0;
         width: 100%;
@@ -463,9 +473,15 @@ a {
         margin: 7% 5%;
     }
 
-    .footerContainer {
+    /* .footerContainer {
         max-width: 100vw;
         width: 100vw;
         padding: 100px 0;
+    } */
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .jdLandingContainer {
+        margin: 70px 0 120px 0;
     }
 }

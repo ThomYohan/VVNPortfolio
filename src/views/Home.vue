@@ -39,7 +39,8 @@
                 <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
                     :transition="{ duration: 0.5, delay: 3.4 }">
                     <lottie-player autoplay loop mode="normal"
-                        src="https://assets3.lottiefiles.com/packages/lf20_iombyzfq.json" style="width: 450px">
+                        src="https://assets3.lottiefiles.com/packages/lf20_iombyzfq.json"
+                        style="width: 450px; max-width: 100vw;">
                     </lottie-player>
                 </Motion>
             </div>
@@ -57,7 +58,7 @@
     </div>
     <div id="about" ref="about" class="aboutContainer">
         <Motion v-for="(index, i) in [1, 2]" :key="i" :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
-            :transition="{ delay: i * 0.2, type: 'spring', stiffness: 200, damping: 20 }">
+            :transition="{ type: 'spring', stiffness: 200, damping: 20, duration: 0.5, delay: 5.25 }">
             <div v-if="index === 1">
                 <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3">Frontend Focus</h2>
                 </h2>
@@ -78,8 +79,10 @@
             </div>
         </Motion>
     </div>
+    <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.7, delay: 0.5 }">
+        <History id="history" ref="history" />
+    </Motion>
     <Tile id="tiles" ref="tiles" />
-    <History id="history" ref="history" />
     <div id="reach" ref="reach" class="reachContainer">
         <Presence>
             <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.5 }">
@@ -99,7 +102,7 @@
 
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent } from 'vue'
 // import { darkTheme } from 'naive-ui'
 // import type { GlobalTheme } from 'naive-ui'
 // import { Icon } from '@vicons/utils'

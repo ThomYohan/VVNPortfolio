@@ -8,8 +8,6 @@
             <Motion class="navBarTile" :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }"
                 :transition="{ duration: 0.5, delay: 4.2 }">
                 <a class="jdNav">Resume</a>
-                <!-- <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png" />
-                <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png" /> -->
                 <Icon size="24">
                     <a class="center" :href="Data.links[1].link" target="_blank">
                         <LogoLinkedin />
@@ -21,7 +19,7 @@
                     </a>
                 </Icon>
                 <Icon size="24">
-                    <a class="center" target="_blank">
+                    <a class="center" href="mailto:thomasgyohannes@gmail.com" target="_blank">
                         <Mail24Regular />
                     </a>
                 </Icon>

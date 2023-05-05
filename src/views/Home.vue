@@ -60,7 +60,7 @@
         <Motion v-for="(index, i) in [1, 2]" :key="i" :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }"
             :transition="{ type: 'spring', stiffness: 200, damping: 20, duration: 0.5, delay: 5.25 }">
             <div v-if="index === 1">
-                <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3">Frontend Focus</h2>
+                <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3 center">Frontend Focus</h2>
                 </h2>
             </div>
             <div v-else>
@@ -79,7 +79,8 @@
             </div>
         </Motion>
     </div>
-    <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.7, delay: 0.5 }">
+    <Motion :initial="{ opacity: 0, y: 100 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.7, delay: 0.5 }"
+        class="historyContainer">
         <History id="history" ref="history" />
     </Motion>
     <Tile id="tiles" ref="tiles" />
@@ -94,6 +95,18 @@
                         great
                         together!
                     </h3>
+                    <a href="mailto:thomasgyohannes@gmail.com">
+                        <n-button type="tertiary">
+                            <h4 class="jdH3" style="color: cadetblue">
+                                Lets Connect
+                                <Icon size="24">
+                                    <a class="center" href="mailto:thomasgyohannes@gmail.com" target="_blank">
+                                        <MdArrowForward />
+                                    </a>
+                                </Icon>
+                            </h4>
+                        </n-button>
+                    </a>
                 </div>
             </Motion>
         </Presence>
@@ -110,6 +123,7 @@ import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
 import { Icon } from '@vicons/utils'
+import { MdArrowForward } from "@vicons/ionIcons4";
 import { Location12Filled } from "@vicons/fluent";
 import "@lottiefiles/lottie-player";
 
@@ -121,7 +135,8 @@ export default defineComponent({
         Motion,
         Presence,
         Icon,
-        Location12Filled
+        Location12Filled,
+        MdArrowForward
     },
     setup() {
         // const lastEl = ref<HTMLElement | null>(null);

@@ -138,8 +138,8 @@
             "location": "Wichita, KS",
             "date": "November 2019 - January 2020 ",
             "details": {
-                "detail1": "",
-                "detail2": "Collaborate and contribute in contunous integration/deployment to optimize frontend styles on web and mobile(iOS)",
+                "detail1": "Collaborate and contribute in contunous integration/deployment to optimize frontend styles on web and mobile(iOS)",
+                "detail2": "",
                 "detail3": "",
                 "detail4": "",
                 "detail5": ""
@@ -231,54 +231,6 @@
                 "info1": "Utilized front end framework/languages to provide route-based, conditionally rendered content to guide customers from first-click to POS",
                 "info2": "Utilized Bootstrap, HTML, & CSS to consolidate and maintain site-wide styling",
                 "info3": "Utilized Nuxt/Meta Tags to improve SEO and marketability",
-                "info4": "",
-                "info5": ""
-            },
-            "thumbnail": "",
-            "thumbnailFallback": "",
-            "images": {
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
-        },
-        {
-            "id": "5",
-            "type": "B",
-            "name": "ShifTradr",
-            "subheading": "Full CRUD Website",
-            "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
-            "description": "",
-            "lottie": "https://assets4.lottiefiles.com/private_files/lf30_rXyqXj.json",
-            "details": {
-                "info1": "",
-                "info2": "",
-                "info3": "",
-                "info4": "",
-                "info5": ""
-            },
-            "thumbnail": "",
-            "thumbnailFallback": "",
-            "images": {
-                "image1": "",
-                "image2": "",
-                "image3": "",
-                "image4": ""
-            }
-        },
-        {
-            "id": "6",
-            "type": "B",
-            "name": "Fitness Calculator",
-            "subheading": "Full CRUD Website",
-            "techStack": "Reactjs, HTML, CSS, Redux PostgreSQL",
-            "description": "",
-            "lottie": "https://assets2.lottiefiles.com/private_files/lf30_Gh7uJv.json",
-            "details": {
-                "info1": "",
-                "info2": "",
-                "info3": "",
                 "info4": "",
                 "info5": ""
             },

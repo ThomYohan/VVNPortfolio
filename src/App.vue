@@ -20,8 +20,11 @@ import { ref, onMounted } from 'vue';
 const themeOverrides: GlobalThemeOverrides = {
   common: {
     primaryColor: '#44FFD2',
-    textColor1: '#613F75',
+    // primaryColor: '#44FFD2',
+    textColor1: '#3F4451',
     textColor2: '#00A6FB',
+    // textColor1: '#613F75',
+    // textColor2: '#00A6FB',
     // secondaryColor: '#613F75',
     // primaryBgColor: '#00A6FB',
     // secondaryBgColor: '#E3B23C',

@@ -3,7 +3,7 @@
     <div class="webContainer">
       <NavBar ref="navbar" @scrollTo="scrollToRef" />
       <router-view />
-      <!-- <Footer /> -->
+      <Footer />
     </div>
   </n-config-provider>
   <!-- <n-config-provider :theme="darkTheme"> -->

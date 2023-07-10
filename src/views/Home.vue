@@ -8,11 +8,17 @@
                     src="https://assets1.lottiefiles.com/packages/lf20_llbjwp92qL.json" style="width: 350px">
                 </lottie-player>
                 <!-- </Motion> -->
-                <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
-                    :transition="{ duration: 0.7, delay: 2 }">
-                    <n-gradient-text class="jdH1" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
+
+                <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }"
+                    :transition="{ duration: 0.7, delay: 2 }"> -->
+                <!-- <div id="header" class="subheader"> -->
+                <div ref="header">
+                    <n-gradient-text class="jdH1 header" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
                         :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Y</n-gradient-text>
-                </Motion>
+                </div>
+                <!-- </div> -->
+                <!-- </Motion> -->
+
             </div>
             <!-- <Motion :initial="{ x: -50, opacity: 0 }" :animate="{ x: 0, opacity: 1 }" :transition="{ duration: 0.5 }">
                 <h1 class="jdH1">Hello! <n-gradient-text gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
@@ -115,7 +121,7 @@
 
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted, ref } from 'vue'
 // import { darkTheme } from 'naive-ui'
 // import type { GlobalTheme } from 'naive-ui'
 // import { Icon } from '@vicons/utils'
@@ -123,6 +129,8 @@ import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
 import { gsap } from "gsap";
+import ScrollTrigger from "gsap";
+// import timeline from "gsap";
 import { Icon } from '@vicons/utils'
 import { MdArrowForward } from "@vicons/ionIcons4";
 import { Location12Filled } from "@vicons/fluent";
@@ -137,22 +145,46 @@ export default defineComponent({
         Presence,
         Icon,
         Location12Filled,
-        MdArrowForward
+        MdArrowForward,
     },
+    // gsap.timeline().set("#char", {scale: 0.7})
+    // gsap.timeline().to('char', {scale: 0})
+    // gsap.timeline()
+    //     .from( "#header", {duration: 0.7, opacity: 0, x: -50, delay: 2})
+    //     .from( "#subheader", {opacity: 0, scale: 0, ease: "back"})
+    //     .from( "#img", {y: 160, stagger: 0.1, duration: 0.8})
+    //     .from( "#time", {x:100})
+    //     .from( "#time", {xPercent: 100})
     setup() {
-        // const lastEl = ref<HTMLElement | null>(null);
-
-        // function scrollToElement(): void {
-        //     const el = lastEl.value;
-        //     if (el) {
-        //         el.scrollIntoView({ behavior: "smooth" });
-        //     }
-        // }
-
-        // return {
-        //     lastEl,
-        //     scrollToElement,
-        // };
+        const header = ref(null)
+        // const subheader = ref(null)
+        onMounted(() => {
+            // gsap.to(box.value, { rotation: "+=360" });
+            // const container = ref(null)
+            gsap.registerPlugin(ScrollTrigger)
+            gsap.from(header.value, {
+                x: -50,
+                opacity: 0,
+                duration: 0.7,
+                delay: 2,
+            })
+            gsap.to(header.value, {
+                duration: 0.7,
+                opacity: 1,
+                // x: -100,
+                delay: 2,
+                ScrollTrigger: {
+                    trigger: "header",
+                    marker: "true",
+                    start: "top top"
+                }
+            })
+        });
+        return {
+            header,
+            // lastEl,
+            // scrollToElement,
+        };
     },
     // data() {
     //     return {

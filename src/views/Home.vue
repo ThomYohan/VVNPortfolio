@@ -122,6 +122,7 @@ import { defineComponent } from 'vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Motion, Presence } from "motion/vue"
+import { gsap } from "gsap";
 import { Icon } from '@vicons/utils'
 import { MdArrowForward } from "@vicons/ionIcons4";
 import { Location12Filled } from "@vicons/fluent";

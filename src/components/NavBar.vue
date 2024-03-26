@@ -1,12 +1,9 @@
 <template>
     <div class="navBar">
         <div class="navBarContainer">
-            <Motion :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }"
-                :transition="{ duration: 0.5, delay: 4 }">
-                <router-link class="jdNav" style="margin-left: 10px;" :to="Data.routes[0].route">TY</router-link>
-            </Motion>
-            <Motion class="navBarTile" :initial="{ y: -50, opacity: 0 }" :animate="{ y: 0, opacity: 1 }"
-                :transition="{ duration: 0.5, delay: 4.2 }">
+            <!-- <div class="navBarContainer" v-if="Data.anchors"> -->
+            <router-link class="jdNav" style="margin-left: 10px;" :to="Data.routes[0].route">TY</router-link>
+            <div class="navBarTile">
                 <a class="jdNav">Resume</a>
                 <Icon size="24">
                     <a class="center" :href="Data.links[1].link" target="_blank">
@@ -23,7 +20,7 @@
                         <Mail24Regular />
                     </a>
                 </Icon>
-            </Motion>
+            </div>
         </div>
     </div>
 </template>
@@ -34,7 +31,6 @@ import { defineComponent } from 'vue'
 // import { darkTheme } from 'naive-ui'
 // import type { GlobalTheme } from 'naive-ui'
 import Data from "../data.json"
-import { Motion, Presence } from "motion/vue"
 import { Icon } from '@vicons/utils'
 import { LogoGithub, LogoLinkedin } from "@vicons/ionIcons4";
 import { Mail24Regular, Location12Filled, } from "@vicons/fluent";
@@ -42,8 +38,6 @@ import { Mail24Regular, Location12Filled, } from "@vicons/fluent";
 export default defineComponent({
     name: 'NavBar',
     components: {
-        Motion,
-        Presence,
         Icon,
         Mail24Regular,
         Location12Filled,

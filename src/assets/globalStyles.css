@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: #4541FE; */
     /* background-color: rgb(118, 0, 240); */
     /* background-color: rgb(253, 207, 138); */
 }
@@ -160,9 +161,7 @@ body {
     /* padding: 75px 3% 140px 3%; */
 }
 
-.historyTimeline {
-    
-}
+.historyTimeline {}
 
 .tileList {
     display: flex;
@@ -223,7 +222,7 @@ body {
     margin: 5%;
 } */
 
-.footerContainer {
+.footer {
     height: 70px;
     width: 860px;
     /* width: 800px; */
@@ -233,10 +232,10 @@ body {
     justify-content: space-between;
     /* align-content: space-between; */
     /* margin: 100px 3%; */
-    padding: 100px 3%;
+    /* padding: 100px 3%; */
 }
 
-.footerIconContainer {
+.footerContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -453,6 +452,9 @@ a {
         flex-direction: column;
         max-width: 100vw;
         /* align-items: center; */
+        animation: move 5s linear;
+        left: 0;
+        position: absolute
     }
 
     .landingAnimationCont {
@@ -507,5 +509,20 @@ a {
 @media (min-width: 300px) and (max-width: 500px) {
     .jdLandingContainer {
         margin: 70px 0 120px 0;
+    }
+}
+
+.landingName {
+    left: 0;
+    animation: move 5s linear;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 100px);
     }
 }

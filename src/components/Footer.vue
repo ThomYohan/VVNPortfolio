@@ -1,6 +1,6 @@
 <template>
-    <div class="footerContainer">
-        <div class="footerIconContainer">
+    <div class="footer">
+        <div class="footerContainer">
             <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png"/>
             <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png"/>
             <Icon size="24">

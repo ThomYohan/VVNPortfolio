@@ -16,6 +16,28 @@
             "route": "/About"
         }
     ],
+    "anchors": [
+        {
+            "id": 1,
+            "name": "Home"
+        },
+        {
+            "id": 2,
+            "name": "About"
+        },
+        {
+            "id": 3,
+            "name": "Projects"
+        },
+        {
+            "id": 4,
+            "name": "History"
+        },
+        {
+            "id": 5,
+            "name": "Reach"
+        }
+    ],
     "roles": [
         {
             "id": 1,
@@ -86,7 +108,6 @@
             "name": "Reach",
             "ref": "reach"
         }
-
     ],
     "history": [
         {
@@ -152,7 +173,7 @@
             "type": "C",
             "name": "New Portfolio",
             "subheading": "Current Portfolio",
-            "techStack": "Vue3, Vite, Typescript, Naive Ui, Motion One, Pinia, Sass",
+            "techStack": "Vue3, Vite, Typescript, Naive Ui, Pinia, Sass",
             "description": "",
             "lottie": "https://assets2.lottiefiles.com/packages/lf20_zxau6gfz.json",
             "details": {

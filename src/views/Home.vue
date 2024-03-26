@@ -1,19 +1,17 @@
 <template>
     <div id="landing" ref="landing" class="jdLandingContainer">
         <!-- <div class="landingTextContainer"> -->
-        <div ref="landingName">
-            <!-- <transition name="fade-down" appear> -->
+        <div ref="landingName" class="landingName">
             <!-- <div class="landingNameCont" v-once v-if="isVisible"> -->
-            <div class="landingNameCont" v-if="isVisible">
+            <div class="landingNameCont">
                 <!-- <lottie-player autoplay mode="normal" speed="1.5"
                         src="https://assets1.lottiefiles.com/packages/lf20_llbjwp92qL.json" style="width: 350px">
                     </lottie-player> -->
-                <div ref="header">
+                <section ref="header" class="scrolled">
                     <n-gradient-text class="jdH1 header" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
                         :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Y</n-gradient-text>
-                </div>
+                </section>
             </div>
-            <!-- </transition> -->
             <div>
                 <h1 class="jdH1">Frontend Software Engineer</h1>
                 <h1 class="jdH3">
@@ -109,23 +107,37 @@ export default defineComponent({
         // const landingName = ref<HTMLElement | null>(null)
         const landingName: any = ref(null)
 
-        const options = {
-            threshold: 0,
-            rootMargin: "0px"
-        }
-        // const subheader = ref(null)
-        const handleIntersection = (entries: any) => {
-            entries.forEach((entry: any) => {
+        const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    isVisible.value = true;
-                    console.error("loooool");
+                    entry.target.classList.add("scrolled");
+                    // Stop observing the element after it's intersecting
+                    observer.unobserve(entry.target);
                 }
-            })
-        }
+            });
+        };
+
+        // Initialize IntersectionObserver
+        const observer = new IntersectionObserver(handleIntersection, { threshold: 0 });
+
+        // Execute code after component is mounted
         onMounted(() => {
-            const observer = new IntersectionObserver(handleIntersection, options)
-            observer.observe(landingName.value)
+            // Observe the desired elements
+            observeElement('.landingName');
+            observeElement('.aboutContainer');
+            observeElement('.reachContainer');
+            // observeElement('.progress-ae');
+            // observeElement('.progress-xd');
+            // observeElement('.progress-id');
         });
+        const observeElement = (selector: string) => {
+            const element = document.querySelector(selector);
+            if (element) {
+                observer.observe(element);
+            } else {
+                console.error(`Element with selector ${selector} not found`);
+            }
+        };
         return {
             // header,
             landingName,

@@ -1,15 +1,23 @@
-/* #root {
-    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-} */
+/* @import url('/src/assets/fonts/supreme.css'); */
+#root {
+    /* font-family: "Supreme-Bold"; */
+    /* font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
 body {
-    /* height: 100%; */
-    font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Supreme-Bold";
+    /* font-family: inherit; */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* background-color: #4541FE; */
     /* background-color: rgb(118, 0, 240); */
     /* background-color: rgb(253, 207, 138); */
+}
+
+main {
+    /* font-family: "Supreme-Bold"; */
+
 }
 
 #app,
@@ -545,29 +553,11 @@ a {
     }
 }
 
-.grid-container {
-    display: grid;
-    max-width: 840px;
-    /* Adjusted to accommodate for margins */
-    margin: 0 auto;
-    /* Center align the grid */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
-    /* Normal gap */
-    transition: gap 0.5s ease-in-out, grid-template-columns 0.5s ease-in-out;
-}
-
-@media (min-width: 50em) {
-    .primary-header {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.product-grid {
+.page-layout {
     width: 100%;
 }
 
-.primary-header {
+.projects {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -577,7 +567,21 @@ a {
     margin: 0 auto;
 }
 
-.primary-header>* {
+.projects>* {
+    margin: 5px;
+}
+
+.history {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 900px;
+    width: 95vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.history>* {
     margin: 5px;
 }
 
@@ -614,7 +618,7 @@ a {
 
 @media (max-width: 1200px) {
     .primary-header {
-        width: 95%;
+        width: 90%;
     }
 }
 

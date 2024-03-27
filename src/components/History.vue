@@ -1,7 +1,16 @@
 <template>
-    <div class="historyTimeline">
-        <!-- <div> -->
-            <!-- <div v-for="data in Data.history" :key="data.id"> -->
+    <main class="history">
+        <section class="job-box" v-for="data in Data.history" :key="data.id">
+            <h2 class="job-title">{{ data.role }}</h2>
+            <h3 class="company-name">{{ data.name }}.</h3>
+            <p class="date">{{ data.date }}</p>
+            <p class="description">{{ data.details.detail1 }}</p>
+            <p class="description">{{ data.details.detail2 }}</p>
+            <p class="description">{{ data.details.detail3 }}</p>
+            <p class="description">{{ data.details.detail4 }}</p>
+        </section>
+    </main>
+    <!-- <div class="historyTimeline">
             <n-card title="Where I've Worked" style="margin-bottom: 16px">
                 <n-tabs type="line" animated>
                     <n-tab-pane name="Job1" tab="Dstillery">
@@ -34,17 +43,7 @@
                     </n-tab-pane>
                 </n-tabs>
             </n-card>
-
-            <!-- <h3>{{ data.role }}</h3>
-                <h3>{{ data.name }}</h3>
-                <h4>{{ data.location }}</h4>
-                <div v-for="details in data.details">
-
-                    <h5>{{ details }}</h5>
-                </div> -->
-            <!-- </div> -->
-        <!-- </div> -->
-    </div>
+    </div> -->
 </template>
 
 

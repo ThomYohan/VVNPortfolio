@@ -1,12 +1,12 @@
 <template>
-    <div id="landing" ref="landing" class="jdLandingContainer">
-        <!-- <div class="landingTextContainer"> -->
+    <!-- <div id="landing" ref="landing" class="jdLandingContainer">
+        <div class="landingTextContainer">
         <div ref="landingName" class="landingName">
-            <!-- <div class="landingNameCont" v-once v-if="isVisible"> -->
+            <div class="landingNameCont" v-once v-if="isVisible">
             <div class="landingNameCont">
-                <!-- <lottie-player autoplay mode="normal" speed="1.5"
+                <lottie-player autoplay mode="normal" speed="1.5"
                         src="https://assets1.lottiefiles.com/packages/lf20_llbjwp92qL.json" style="width: 350px">
-                    </lottie-player> -->
+                    </lottie-player>
                 <section ref="header" class="scrolled">
                     <n-gradient-text class="jdH1 header" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
                         :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Y</n-gradient-text>
@@ -21,13 +21,13 @@
                 </h1>
             </div>
             <div class="landingAnimationCont">
-                <!-- <lottie-player autoplay loop mode="normal"
+                <lottie-player autoplay loop mode="normal"
                         src="https://assets3.lottiefiles.com/packages/lf20_iombyzfq.json"
                         style="width: 450px; max-width: 100vw;">
-                    </lottie-player> -->
+                    </lottie-player>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <div id="about" ref="about" class="aboutContainer">
         <div>
             <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3 center">Frontend Focus</h2>
@@ -48,8 +48,8 @@
                 that reflects the latest trends and best practices in the industry!</h4>
         </div>
     </div> -->
-    <div class="product-grid">
-        <div class="primary-header">
+    <main class="page-layout">
+        <section class="projects">
             <div class="tile tile-a">Tile A</div>
             <div class="tile tile-b">Tile B</div>
             <div class="tile tile-c">Tile C</div>
@@ -57,15 +57,13 @@
             <div class="tile tile-b">Tile E</div>
             <!-- <div class="tile tile-c">Tile F</div>
             <div class="tile tile-c">Tile G</div> -->
-        </div>
-    </div>
+        </section>
+        <History id="history" ref="history" />
+    </main>
 
 
-
-
-    <History id="history" ref="history" />
-    <Tile id="tiles" ref="tiles" />
-    <div id="reach" ref="reach" class="reachContainer">
+    <!-- <Tile id="tiles" ref="tiles" /> -->
+    <!-- <div id="reach" ref="reach" class="reachContainer">
         <div class="reachLink">
             <h3 class="jdH6">
                 If you're looking for a skilled
@@ -87,7 +85,7 @@
                 </n-button>
             </a>
         </div>
-    </div>
+    </div> -->
 </template>
 
 

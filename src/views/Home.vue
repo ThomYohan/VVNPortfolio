@@ -53,8 +53,8 @@
             <div class="tile tile-a">Tile A</div>
             <div class="tile tile-b">Tile B</div>
             <div class="tile tile-c">Tile C</div>
-            <div class="tile tile-a">Tile D</div>
-            <div class="tile tile-b">Tile E</div>
+            <div class="tile tile-b">Tile D</div>
+            <div class="tile tile-a">Tile E</div>
             <!-- <div class="tile tile-c">Tile F</div>
             <div class="tile tile-c">Tile G</div> -->
         </section>

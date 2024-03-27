@@ -28,13 +28,11 @@
             </div>
         </div>
     </div>
-    <div id="about" ref="about" class="aboutContainer">
+    <!-- <div id="about" ref="about" class="aboutContainer">
         <div>
-            <!-- <div v-if="index === 1"> -->
             <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3 center">Frontend Focus</h2>
             </h2>
         </div>
-        <!-- <div v-else> -->
         <div>
             <h4 class="jdH5">Welcome to my personal website! I'm Thomas Yohannes, a Frontend Software Engineer with a
                 passion
@@ -49,7 +47,22 @@
                 together
                 that reflects the latest trends and best practices in the industry!</h4>
         </div>
+    </div> -->
+    <div class="product-grid">
+        <div class="primary-header">
+            <div class="tile tile-a">Tile A</div>
+            <div class="tile tile-b">Tile B</div>
+            <div class="tile tile-c">Tile C</div>
+            <div class="tile tile-a">Tile D</div>
+            <div class="tile tile-b">Tile E</div>
+            <!-- <div class="tile tile-c">Tile F</div>
+            <div class="tile tile-c">Tile G</div> -->
+        </div>
     </div>
+
+
+
+
     <History id="history" ref="history" />
     <Tile id="tiles" ref="tiles" />
     <div id="reach" ref="reach" class="reachContainer">

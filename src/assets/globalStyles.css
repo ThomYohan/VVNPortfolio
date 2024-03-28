@@ -560,14 +560,18 @@ h1 {
     font-size: 96px;
     font-weight: 700;
     line-height: 105%;
+    margin: 20px 0 20px 0;
+    text-align: center;
 }
 
 h2 {
     color: #2a2a2b;
     margin-top: 0;
-    font-size: 16px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 150%;
+    margin: 20px 0 20px 0;
+    text-align: center;
 }
 
 h3 {
@@ -649,6 +653,16 @@ h5 {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+.header-link-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.header-links {
+    margin: 0 5px 0 5px;
 }
 
 .info-box {
@@ -984,6 +998,20 @@ footer {
         }
         .info-text {
             text-align: left;
+        }
+
+        .header-link-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .info-box {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .info-text {
+            text-align: center;
         }
     }
 

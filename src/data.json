@@ -69,19 +69,19 @@
             "id": 1,
             "name": "LinkedIn",
             "link": "https://www.linkedin.com/in/thomasgyohannes/",
-            "icon": "/assets/icons/Linkedin.png"
+            "icon": "LogoLinkedin"
         },
         {
             "id": 2,
             "name": "Github",
             "link": "https://github.com/ThomYohan",
-            "icon": "./assets/icons/Github.png"
+            "icon": "LogoGithub"
         },
         {
             "id": 3,
-            "name": "Github",
-            "link": "",
-            "icon": ""
+            "name": "Email",
+            "link": "mailto:thomasgyohannes@gmail.com",
+            "icon": "Mail24Regular"
         }
     ],
     "footerLinks": [

@@ -53,11 +53,13 @@
             <!-- <h1>Hello,</h1>
             <h1>I'm Thomas Yohannes</h1> -->
             <div class="title-box">
+                <!-- <h1 class="title-align">Hello,</h1>
+                    <h1 class="title-align">I'm Thomas Yohannes</h1> -->
                 <h1 class="title-align">I'm Thomas Yohannes</h1>
                 <h2 class="title-align">Frontend Software Engineer</h2>
             </div>
             <div class="header-box">
-                <div>
+                <!-- <div>
                     <Icon size="24" class="icons">
                         <a :href="Data.links[0].link" target="_blank">
                             <LogoLinkedin />
@@ -73,6 +75,20 @@
                             <Mail24Regular />
                         </a>
                     </Icon>
+                </div> -->
+                <div class="header-link-container">
+                    <div class="header-links" v-for="data in Data.links" :key="data.id">
+                        <Icon size="32">
+                            <a class="" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
+                                <!-- <`${{ data.icon }}` /> -->
+                                <component :is="data.icon" />
+                                <!-- {{ data.name }} -->
+                            </a>
+                            <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
+                                {{ data.name }}
+                            </a>
+                        </Icon>
+                    </div>
                 </div>
                 <div class="info-box">
                     <h4 class="info-text">Working on cool web stuff</h4>
@@ -114,12 +130,12 @@
             <section class="footer-container2">
                 <div v-for="data in Data.footerLinks" :key="data.id">
                     <Icon size="24">
-                        <a  class="footer-icons" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
+                        <a class="footer-icons" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
                             <!-- <`${{ data.icon }}` /> -->
                             <!-- <component :is="data.icon" /> -->
                             {{ data.name }}
                         </a>
-                        <a  class="footer-icons" v-else :href="data.link" target="_blank" rel="">
+                        <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
                             {{ data.name }}
                         </a>
                     </Icon>

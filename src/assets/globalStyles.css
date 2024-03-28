@@ -571,20 +571,6 @@ a {
     margin: 5px;
 }
 
-.history {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    max-width: 900px;
-    width: 95vw;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-.history>* {
-    margin: 5px;
-}
-
 .tile {
     box-sizing: border-box;
     height: 400px;
@@ -615,11 +601,77 @@ a {
     /* Set maximum width to 100% */
 }
 
+.history {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 900px;
+    width: 95vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* .history-box>* {
+    margin: 5px;
+} */
+
+.history-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    /* max-width: 50vw; */
+    /* max-width: 50dvw; */
+    /* max-width: 900px; */
+    /* width: 95vw; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.job-box {
+    /* width: calc(50% - 10px); */
+    width: calc(100% - 10px);
+    border: 5px solid indigo;
+    border-radius: 20px;
+    box-sizing: border-box; /* Add this line */
+}
+
+.edu-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    width: calc(50% - 10px);
+}
+
+/* .edu-container > * {
+    margin: 5px;
+} */
+
+.edu-box {
+    /* width: calc(50% - 10px); */
+    width: calc(100% - 10px);
+    border: 5px solid teal;
+    border-radius: 20px;
+    /* box-sizing: border-box; */
+    /* max-width: 100vw; */
+    /* box-sizing: border-box; */
+    /* max-width: 100%; */
+    /* height: 400px; */
+}
+
+.history,
+.edu-container {
+    flex-direction: row; /* Adjust flex direction to row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
 
 @media (max-width: 1200px) {
-    .primary-header {
+    /* .primary-header {
         width: 90%;
-    }
+    } */
 }
 
 @media (max-width: 750px) {
@@ -635,16 +687,35 @@ a {
 
     .tile-a {
         width: 100%;
-        border: 5px solid coral;
     }
 
     .tile-b {
         width: 100%;
-        border: 5px solid cyan;
     }
 
     .tile-c {
         width: 100%;
-        border: 5px solid lavender;
+    }
+
+    .job-box {
+        width: 100%;
+    }
+
+    .history {
+        display: flex;
+        flex-direction: column;
+        /* margin: 0; */
+    }
+    .edu-container {
+        width: 100%;
+    }
+    .history-box {
+        width: 100%;
+        /* margin: 0; */
+        /* padding: 0; */
+    }
+
+    .job-box {
+        margin: 5px 0;
     }
 }

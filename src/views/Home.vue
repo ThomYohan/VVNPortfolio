@@ -58,7 +58,16 @@
             <!-- <div class="tile tile-c">Tile F</div>
             <div class="tile tile-c">Tile G</div> -->
         </section>
-        <History id="history" ref="history" />
+        <section class="history">
+            <History id="history" ref="history" />
+            <section class="edu-container">
+                <section class="edu-box" v-for="data in Data.educationContact" :key="data.id">
+                    <p>{{ data.education }}</p>
+                    <p>{{ data.certificate }}</p>
+                    <p>{{ data.date }}</p>
+                </section>
+            </section>
+        </section>
     </main>
 
 
@@ -99,6 +108,7 @@ import Tile from '../components/Tile.vue'
 import { Icon } from '@vicons/utils'
 import { MdArrowForward } from "@vicons/ionIcons4";
 import { Location12Filled } from "@vicons/fluent";
+import Data from "../data.json"
 import "@lottiefiles/lottie-player";
 
 
@@ -154,6 +164,11 @@ export default defineComponent({
             landingName,
             isVisible
         };
+    },
+    data() {
+        return {
+            Data
+        }
     },
     // data() {
     //     return {

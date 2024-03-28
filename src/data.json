@@ -264,5 +264,13 @@
                 "image4": ""
             }
         }
+    ],
+    "educationContact": [
+        {
+            "id": 1,
+            "education": "Devmountain Coding Bootcamp",
+            "date": "2019",
+            "certificate": "Web Development Certificate"
+        }
     ]
 }

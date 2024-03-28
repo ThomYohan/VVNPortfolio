@@ -2,7 +2,7 @@
     <main class="history-box">
         <section class="job-box" v-for="data in Data.history" :key="data.id">
             <div class="job-title">
-                <h5 class="job-title">{{ data.role }}</h5>
+                <h4 class="job-title">{{ data.role }}</h4>
                 <h5 class="company-name">, {{data.name }}</h5>
             </div>
             <h5 class="date">{{ data.date }}</h5>

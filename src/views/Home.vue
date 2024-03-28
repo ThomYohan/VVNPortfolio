@@ -111,7 +111,7 @@
             <History id="history" ref="history" />
             <section class="edu-container">
                 <section class="edu-box" v-for="data in Data.educationContact" :key="data.id">
-                    <h5>{{ data.education }}</h5>
+                    <h4>{{ data.education }}</h4>
                     <h5>{{ data.certificate }}</h5>
                     <h5>{{ data.date }}</h5>
                 </section>

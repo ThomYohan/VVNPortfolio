@@ -661,6 +661,7 @@ h5 {
     align-items: center;
     flex-direction: row;
     width: 200px;
+    padding: 0 10px 0 0;
 
 }
 
@@ -826,9 +827,9 @@ h5 {
     border: 5px solid indigo;
     border-radius: 20px;
     padding: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    /* margin-bottom: 10px; */
     box-sizing: border-box;
-    /* Add this line */
 }
 
 .job-title {
@@ -841,20 +842,12 @@ h5 {
 .edu-container {
     display: flex;
     align-items: flex-start;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     /* margin: 0 auto; */
     margin: 5px;
-    /* Add margin */
-    /* width: calc(50% - 10px); */
-
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     width: calc(50% - 10px);
-    /* Align items to center */
-    /* width: 100%; */
-    /* margin: 5px; */
 }
 
 /* .edu-container > * {

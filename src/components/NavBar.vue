@@ -5,7 +5,7 @@
             <router-link class="jdNav" style="margin-left: 10px;" :to="Data.routes[0].route">TY</router-link>
             <div class="navBarTile">
                 <a class="jdNav">Resume</a>
-                <Icon size="24">
+                <!-- <Icon size="24">
                     <a class="center" :href="Data.links[1].link" target="_blank">
                         <LogoLinkedin />
                     </a>
@@ -19,7 +19,7 @@
                     <a class="center" href="mailto:thomasgyohannes@gmail.com" target="_blank">
                         <Mail24Regular />
                     </a>
-                </Icon>
+                </Icon> -->
             </div>
         </div>
     </div>

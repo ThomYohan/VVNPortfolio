@@ -48,13 +48,46 @@
                 that reflects the latest trends and best practices in the industry!</h4>
         </div>
     </div> -->
+    <header class="header">
+        <div class="header-container">
+            <!-- <h1>Hello,</h1>
+            <h1>I'm Thomas Yohannes</h1> -->
+            <div class="title-box">
+                <h1 class="title-align">I'm Thomas Yohannes</h1>
+                <h2 class="title-align">Frontend Software Engineer</h2>
+            </div>
+            <div class="header-box">
+                <div>
+                    <Icon size="24" class="icons">
+                        <a :href="Data.links[0].link" target="_blank">
+                            <LogoLinkedin />
+                        </a>
+                    </Icon>
+                    <Icon size="24" class="icons">
+                        <a class="center" :href="Data.links[1].link" target="_blank">
+                            <LogoGithub />
+                        </a>
+                    </Icon>
+                    <Icon size="24" class="icons">
+                        <a class="center" href="mailto:thomasgyohannes@gmail.com" target="_blank">
+                            <Mail24Regular />
+                        </a>
+                    </Icon>
+                </div>
+                <div class="info-box">
+                    <h4 class="info-text">Working on cool web stuff</h4>
+                    <h4>Currently looking for a new team</h4>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="page-layout">
         <section class="projects">
             <div class="tile tile-a">Tile A</div>
             <div class="tile tile-b">Tile B</div>
             <div class="tile tile-c">Tile C</div>
-            <div class="tile tile-b">Tile D</div>
-            <div class="tile tile-a">Tile E</div>
+            <!-- <div class="tile tile-b">Tile D</div>
+            <div class="tile tile-a">Tile E</div> -->
             <!-- <div class="tile tile-c">Tile F</div>
             <div class="tile tile-c">Tile G</div> -->
         </section>
@@ -62,13 +95,39 @@
             <History id="history" ref="history" />
             <section class="edu-container">
                 <section class="edu-box" v-for="data in Data.educationContact" :key="data.id">
-                    <p>{{ data.education }}</p>
-                    <p>{{ data.certificate }}</p>
-                    <p>{{ data.date }}</p>
+                    <h5>{{ data.education }}</h5>
+                    <h5>{{ data.certificate }}</h5>
+                    <h5>{{ data.date }}</h5>
                 </section>
             </section>
         </section>
     </main>
+
+    <footer>
+        <section class="footer-box">
+            <!-- <section class="footerInfo"> -->
+            <section class="footer-container">
+                <h5 class="footer-description">Made with blah</h5>
+                <h5 class="footer-description">© 2024 Portfolio by Thomas Yohannes</h5>
+            </section>
+            <!-- </section> -->
+            <section class="footer-container2">
+                <div v-for="data in Data.footerLinks" :key="data.id">
+                    <Icon size="24">
+                        <a  class="footer-icons" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
+                            <!-- <`${{ data.icon }}` /> -->
+                            <!-- <component :is="data.icon" /> -->
+                            {{ data.name }}
+                        </a>
+                        <a  class="footer-icons" v-else :href="data.link" target="_blank" rel="">
+                            {{ data.name }}
+                        </a>
+                    </Icon>
+                </div>
+            </section>
+
+        </section>
+    </footer>
 
 
     <!-- <Tile id="tiles" ref="tiles" /> -->
@@ -106,8 +165,8 @@ import { defineComponent, onMounted, ref } from 'vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import { Icon } from '@vicons/utils'
-import { MdArrowForward } from "@vicons/ionIcons4";
-import { Location12Filled } from "@vicons/fluent";
+import { MdArrowForward, LogoGithub, LogoLinkedin } from "@vicons/ionIcons4";
+import { Location12Filled, Mail24Regular } from "@vicons/fluent";
 import Data from "../data.json"
 import "@lottiefiles/lottie-player";
 
@@ -120,6 +179,9 @@ export default defineComponent({
         Icon,
         Location12Filled,
         MdArrowForward,
+        LogoGithub,
+        LogoLinkedin,
+        Mail24Regular
     },
 
     setup() {

@@ -1,13 +1,15 @@
 <template>
     <main class="history-box">
         <section class="job-box" v-for="data in Data.history" :key="data.id">
-            <h2 class="job-title">{{ data.role }}</h2>
-            <h3 class="company-name">{{ data.name }}</h3>
-            <p class="date">{{ data.date }}</p>
-            <p class="description">{{ data.details.detail1 }}</p>
-            <p class="description">{{ data.details.detail2 }}</p>
-            <p class="description">{{ data.details.detail3 }}</p>
-            <p class="description">{{ data.details.detail4 }}</p>
+            <div class="job-title">
+                <h5 class="job-title">{{ data.role }}</h5>
+                <h5 class="company-name">, {{data.name }}</h5>
+            </div>
+            <h5 class="date">{{ data.date }}</h5>
+            <h5 class="description">{{ data.details.detail1 }}</h5>
+            <!-- <h5 class="description">{{ data.details.detail2 }}</h5> -->
+            <!-- <h5 class="description">{{ data.details.detail3 }}</h5> -->
+            <!-- <h5 class="description">{{ data.details.detail4 }}</h5> -->
         </section>
     </main>
     <!-- <div class="historyTimeline">

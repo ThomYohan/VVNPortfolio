@@ -56,30 +56,58 @@
             "name": "Software Developer"
         }
     ],
-    "links": [
+    "navLinks": [
         {
             "id": 1,
             "name": "Resume",
             "link": "",
             "icon": "../assets/icons/Linkedin.png"
-        },
+        }
+    ],
+    "links": [
         {
-            "id": 2,
+            "id": 1,
             "name": "LinkedIn",
             "link": "https://www.linkedin.com/in/thomasgyohannes/",
             "icon": "/assets/icons/Linkedin.png"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "Github",
             "link": "https://github.com/ThomYohan",
             "icon": "./assets/icons/Github.png"
         },
         {
-            "id": 4,
+            "id": 3,
             "name": "Github",
             "link": "",
             "icon": ""
+        }
+    ],
+    "footerLinks": [
+        {
+            "id": 1,
+            "name": "Email",
+            "link": "https://www.linkedin.com/in/thomasgyohannes/",
+            "icon": "LogoLinkedin"
+        },
+        {
+            "id": 2,
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/thomasgyohannes/",
+            "icon": "LogoLinkedin"
+        },
+        {
+            "id": 3,
+            "name": "Github",
+            "link": "https://github.com/ThomYohan",
+            "icon": "LogoGithub"
+        },
+        {
+            "id": 4,
+            "name": "Resume",
+            "link": "",
+            "icon": "Mail24Regular"
         }
     ],
     "timeline": [

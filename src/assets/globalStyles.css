@@ -734,7 +734,7 @@ h5 {
     /* max-width: 50vw; */
     /* max-width: 50dvw; */
     /* max-width: 900px; */
-    width: 95vw;
+    /* width: 95vw; */
     flex-wrap: wrap;
     /* margin: 5px; */
     /* Add margin */
@@ -761,7 +761,7 @@ h5 {
 
 .edu-container {
     display: flex;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     /* flex-direction: column; */
     flex-wrap: wrap;
     /* margin: 0 auto; */
@@ -771,9 +771,10 @@ h5 {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    width: calc(50% - 10px);
     /* Align items to center */
-    width: 100%;
+    /* width: 100%; */
     /* margin: 5px; */
 }
 
@@ -783,7 +784,7 @@ h5 {
 
 .edu-box {
     /* width: calc(50% - 10px); */
-    width: calc(100% - 10px);
+    width: 100%;
     border: 5px solid teal;
     border-radius: 20px;
     padding: 30px;

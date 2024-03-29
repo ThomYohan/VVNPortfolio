@@ -99,9 +99,28 @@
     </header>
     <main class="page-layout">
         <section class="projects">
-            <div class="tile tile-a">Tile A</div>
-            <div class="tile tile-b">Tile B</div>
-            <div class="tile tile-c">Tile C</div>
+            <!-- <section class="projects" v-for="(project, index) in Data.projects" :key="project.id"> -->
+            <!-- <div class="tile" :class="getTileClass(index)">Tile A</div> -->
+            <div class="tile tile-a tile-header">
+                <h3 class="tile-header">{{ Data.projects[0].name }}</h3>
+                <h5>{{ Data.projects[0].description }}</h5>
+            </div>
+            <div class="tile tile-b">
+                <h3 class="tile-header">{{ Data.projects[1].name }}</h3>
+                <h5>{{ Data.projects[1].description }}</h5>
+            </div>
+            <!-- <div class="tile tile-c">
+                <h3>{{ Data.projects[2].name }}</h3>
+                <h4>{{ Data.projects[2].description }}</h4>
+            </div> -->
+            <div class="tile tile-d">
+                <h3 class="tile-header">{{ Data.projects[2].name }}</h3>
+                <h5>{{ Data.projects[2].description }}</h5>
+            </div>
+            <div class="tile tile-e">
+                <h3 class="tile-header">{{ Data.projects[3].name }}</h3>
+                <h5>{{ Data.projects[3].description }}</h5>
+            </div>
             <!-- <div class="tile tile-b">Tile D</div>
             <div class="tile tile-a">Tile E</div> -->
             <!-- <div class="tile tile-c">Tile F</div>
@@ -242,6 +261,13 @@ export default defineComponent({
             landingName,
             isVisible
         };
+    },
+    methods: {
+        getTileClass(index: any) {
+            const classes = ['tile', 'tile-a', 'tile-b', 'tile-c'];
+            // Alternating classes logic
+            return classes[index % 3 + 1]; // Start from 1 to skip the "tile" class
+        }
     },
     data() {
         return {

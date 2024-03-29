@@ -672,7 +672,7 @@ h5 {
     top: 10px;
     /* width: 100%; */
     /* width: 95vw; */
-    width: calc(90% - 10px);
+    width: calc(95% - 10px);
     max-width: calc(900px - 10px);
     /* background-color: #fff; */
     /* background-color: transparent; */
@@ -800,7 +800,7 @@ h5 {
 
 .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     max-width: 900px;
     width: 95vw;
@@ -1161,7 +1161,7 @@ footer {
         }
     }
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
         h1 {
             font-size: calc(8vw + 10px);
             /* Adjust the formula as needed */
@@ -1178,9 +1178,17 @@ footer {
         }
 
         .navvyBar {
-            /* width: calc(90% - 10px); */
-            /* max-width: calc(80% - 10px); */
-            max-width: 95%;
+            width: 95%;
+            /* width: calc(95% - 10px); */
+            /* max-width: calc(95% - 10px); */
+            /* max-width: 95vw; */
+        }
+    }
+
+    @media screen and (min-width: 750px) and (max-width: 1000px) {
+        .navvyBar {
+            width: calc(90% - 10px);
+            max-width: calc(90% - 10px);
         }
     }
 

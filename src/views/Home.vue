@@ -91,8 +91,8 @@
                     </div>
                 </div>
                 <div class="info-box">
-                    <h4 class="info-text">Working on cool web stuff</h4>
-                    <h4>Currently looking for a new team</h4>
+                    <h5 class="info-text">Working on cool web stuff</h5>
+                    <h5>Currently looking for a new team</h5>
                 </div>
             </div>
         </div>

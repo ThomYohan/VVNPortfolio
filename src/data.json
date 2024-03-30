@@ -140,6 +140,20 @@
     "history": [
         {
             "id": "1",
+            "role": "iOS Engineer",
+            "name": "Par West",
+            "location": "Rancho Cucamonga, California",
+            "date": "April 2023 - March 2024",
+            "details": {
+                "detail1": "Implemented robust data persistence mechanisms to ensure accurate and efficient saving of crucial application data",
+                "detail2": "Worked directly with an outsourced team of proficient UI/UX Designers to review, clean up, and finalize new production designs for a multi-quarter project",
+                "detail3": "Overhauled existing interfaces and cleaned up ui issues across a variety of environments",
+                "detail4": "Created presentations, mockups, and proof-of-concepts for cross-team collaboration and communication of deliverables",
+                "detail5": ""
+            }
+        },
+        {
+            "id": "2",
             "role": "Software Engineer",
             "name": "Dstillery",
             "location": "New York",
@@ -153,7 +167,7 @@
             }
         },
         {
-            "id": "2",
+            "id": "3",
             "role": "Software Engineer",
             "name": "Speakfully",
             "location": "Eau Claire, WI",
@@ -167,7 +181,7 @@
             }
         },
         {
-            "id": "3",
+            "id": "4",
             "role": "Full Stack Developer",
             "name": "RentChirp",
             "location": "San Francisco, CA",
@@ -181,7 +195,7 @@
             }
         },
         {
-            "id": "4",
+            "id": "5",
             "role": "Associate Software Engineer",
             "name": "PK Technology",
             "location": "Wichita, KS",
@@ -199,10 +213,17 @@
         {
             "id": "1",
             "type": "C",
-            "name": "New Portfolio",
+            "name": "My Portfolio (Current Site)",
             "subheading": "Current Portfolio",
-            "techStack": "Vue3, Vite, Typescript, Naive Ui, Pinia, Sass",
-            "description": "",
+            "techStack": {
+                "tech1": "Vue3",
+                "tech2": "Vite",
+                "tech3": "Typescript",
+                "tech4": "Naive Ui",
+                "tech5": "Pinia",
+                "tech6": "Sass"
+            },
+            "description": "A mobile-responsive website built with Vue 3, Vite for fast development, and TypeScript for type safety, blending JavaScript flexibility with robust typing",
             "lottie": "https://assets2.lottiefiles.com/packages/lf20_zxau6gfz.json",
             "details": {
                 "info1": "",
@@ -225,8 +246,15 @@
             "type": "A",
             "name": "Coven App",
             "subheading": "Mobile App",
-            "techStack": "MERN",
-            "description": "Outsourced app for The Coven, a company local to Speakfully in Eau Claire, WI",
+            "techStack": {
+                "tech1": "MongoDB",
+                "tech2": "Express",
+                "tech4": "NodeJS",
+                "tech3": "React Native",
+                "tech5": "Typescript",
+                "tech6": "Javascript"
+            },
+            "description": "Partnered with Coven's leadership to spearhead the frontend development of their app, contributing to the full-stack creation process alongside their team",
             "lottie": "https://assets4.lottiefiles.com/packages/lf20_zEqK5rHxBV.json",
             "details": {
                 "info1": "Collaborated in ground-level development of an app, from start to app store submission",
@@ -249,8 +277,16 @@
             "type": "B",
             "name": "SpeakfullyNow",
             "subheading": "Mobile App",
-            "techStack": "MERN",
-            "description": "Mobile app for Speakfully",
+            "techStack": {
+                "tech1": "MongoDB",
+                "tech2": "Express",
+                "tech3": "NodeJS",
+                "tech4": "React Native",
+                "tech5": "Typescript",
+                "tech6": "Javascript",
+                "tech7": "Bootstrap"
+            },
+            "description": "Collaborated closely with Speakfully's CEO, CTO, Principal Software Engineer, UI/UX Designer, and Cloud Engineer to develop a mobile-responsive app integrated with Speakfully's overarching product suite",
             "lottie": "https://assets4.lottiefiles.com/packages/lf20_blmn2rwe.json",
             "details": {
                 "info1": "Collaborated with the CTO, Principal Software Engineer, & UI/UX Designer to release a web app connected to our existing architecture",
@@ -273,8 +309,16 @@
             "type": "C",
             "name": "Speakfully",
             "subheading": "Website",
-            "techStack": "MEVN",
-            "description": "Front facing website for Speakfully",
+            "techStack": {
+                "tech1": "MongoDB",
+                "tech2": "Express",
+                "tech3": "React Native",
+                "tech4": "NodeJS",
+                "tech5": "Typescript",
+                "tech6": "Javascript",
+                "tech7": "Bootstrap"
+            },
+            "description": " I partnered with Speakfully's CEO, CTO, Principal Software Engineer, UI/UX Designer, and Cloud Engineer to revamp and maintain Speakfully's front-facing website",
             "lottie": "https://assets9.lottiefiles.com/packages/lf20_ksrcyxgn.json",
             "details": {
                 "info1": "Utilized front end framework/languages to provide route-based, conditionally rendered content to guide customers from first-click to POS",

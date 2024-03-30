@@ -6,7 +6,7 @@
                 </h4>
                 <!-- <h5 class="company-name">, {{data.name }}</h5> -->
             </div>
-            <h5 class="date">{{ data.date }}</h5>
+            <h5 class="job-date">{{ data.date }}</h5>
             <h5 class="description">{{ data.details.detail1 }}</h5>
             <!-- <h5 class="description">{{ data.details.detail2 }}</h5> -->
             <!-- <h5 class="description">{{ data.details.detail3 }}</h5> -->

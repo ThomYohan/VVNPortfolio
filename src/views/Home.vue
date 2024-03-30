@@ -101,12 +101,18 @@
         <section class="projects">
             <!-- <section class="projects" v-for="(project, index) in Data.projects" :key="project.id"> -->
             <!-- <div class="tile" :class="getTileClass(index)">Tile A</div> -->
-            <div class="tile tile-a tile-header">
+            <div class="tile tile-a">
                 <h3 class="tile-header">{{ Data.projects[0].name }}</h3>
+                <div class="techStack">
+                    <h6 v-for=" data in Data.projects[0].techStack">{{ data }}</h6>
+                </div>
                 <h5>{{ Data.projects[0].description }}</h5>
             </div>
             <div class="tile tile-b">
                 <h3 class="tile-header">{{ Data.projects[1].name }}</h3>
+                <div class="techStack">
+                    <h6 v-for=" data in Data.projects[1].techStack">{{ data }}</h6>
+                </div>
                 <h5>{{ Data.projects[1].description }}</h5>
             </div>
             <!-- <div class="tile tile-c">
@@ -115,16 +121,18 @@
             </div> -->
             <div class="tile tile-d">
                 <h3 class="tile-header">{{ Data.projects[2].name }}</h3>
+                <div class="techStack">
+                    <h6 v-for=" data in Data.projects[2].techStack">{{ data }}</h6>
+                </div>
                 <h5>{{ Data.projects[2].description }}</h5>
             </div>
             <div class="tile tile-e">
                 <h3 class="tile-header">{{ Data.projects[3].name }}</h3>
+                <div class="techStack">
+                    <h6 v-for=" data in Data.projects[3].techStack">{{ data }}</h6>
+                </div>
                 <h5>{{ Data.projects[3].description }}</h5>
             </div>
-            <!-- <div class="tile tile-b">Tile D</div>
-            <div class="tile tile-a">Tile E</div> -->
-            <!-- <div class="tile tile-c">Tile F</div>
-            <div class="tile tile-c">Tile G</div> -->
         </section>
         <section class="history">
             <History id="history" ref="history" />
@@ -132,7 +140,7 @@
                 <section class="edu-box" v-for="data in Data.educationContact" :key="data.id">
                     <h4>{{ data.education }}</h4>
                     <h5>{{ data.certificate }}</h5>
-                    <h5>{{ data.date }}</h5>
+                    <h5 class="job-date">{{ data.date }}</h5>
                 </section>
             </section>
         </section>
@@ -227,7 +235,9 @@ export default defineComponent({
 
         const handleIntersection = (entries: IntersectionObserverEntry[]) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if (entry.target.classList.contains("title-box")) {
+                    entry.target.classList.add("title-scrolled");
+                } else if (entry.isIntersecting) {
                     entry.target.classList.add("scrolled");
                     // Stop observing the element after it's intersecting
                     observer.unobserve(entry.target);
@@ -241,7 +251,7 @@ export default defineComponent({
         // Execute code after component is mounted
         onMounted(() => {
             // Observe the desired elements
-            observeElement('.landingName');
+            observeElement('.title-box');
             observeElement('.aboutContainer');
             observeElement('.reachContainer');
             // observeElement('.progress-ae');
@@ -261,13 +271,6 @@ export default defineComponent({
             landingName,
             isVisible
         };
-    },
-    methods: {
-        getTileClass(index: any) {
-            const classes = ['tile', 'tile-a', 'tile-b', 'tile-c'];
-            // Alternating classes logic
-            return classes[index % 3 + 1]; // Start from 1 to skip the "tile" class
-        }
     },
     data() {
         return {

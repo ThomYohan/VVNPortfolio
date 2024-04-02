@@ -1,11 +1,8 @@
 <template>
     <div class="footer">
         <div class="footerContainer">
-            <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png"/>
-            <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png"/>
-            <Icon size="24">
-                <Mail24Regular />
-            </Icon>
+            <!-- <img style="{{ font-size: 24 }}" src="../assets/icons/LinkedIn.png"/>
+            <img style="{{ font-size: 24 }}" src="../assets/icons/Github.png"/> -->
         </div>
         <div>
             <h3>Orca</h3>
@@ -17,16 +14,12 @@
 <script lang="ts">
 import Data from "../data.json"
 import { defineComponent } from "vue";
-import { Icon } from '@vicons/utils'
-import { Mail24Regular } from "@vicons/fluent";
 
 
 
 export default defineComponent({
     name: "Footer",
     components: {
-        Icon,
-        Mail24Regular
     },
     // data() {
     //     return {

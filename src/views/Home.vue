@@ -26,7 +26,6 @@
                 </div>
                 <div class="info-box">
                     <h5 class="info-text">Working on cool web stuff</h5>
-                    <h5>Currently looking for a new team</h5>
                 </div>
             </div>
         </div>

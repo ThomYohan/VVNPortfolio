@@ -875,7 +875,7 @@ h6 {
 .info-box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .info-text {

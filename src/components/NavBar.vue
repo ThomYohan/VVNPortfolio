@@ -15,18 +15,10 @@ import { defineComponent } from 'vue'
 // import { darkTheme } from 'naive-ui'
 // import type { GlobalTheme } from 'naive-ui'
 import Data from "../data.json"
-import { Icon } from '@vicons/utils'
-import { LogoGithub, LogoLinkedin } from "@vicons/ionIcons4";
-import { Mail24Regular, Location12Filled, } from "@vicons/fluent";
 
 export default defineComponent({
     name: 'NavBar',
     components: {
-        Icon,
-        Mail24Regular,
-        Location12Filled,
-        LogoGithub,
-        LogoLinkedin
 
     },
     data() {

@@ -53,13 +53,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Data from "../data.json"
-import { Icon } from '@vicons/utils'
-import { IosGitCommit } from "@vicons/ionIcons4";
 
 export default defineComponent({
     components: {
-        Icon,
-        IosGitCommit
     },
     setup() {
         return {

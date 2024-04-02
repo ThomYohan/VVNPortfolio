@@ -12,16 +12,20 @@
             <div class="header-box">
                 <div class="header-link-container">
                     <div class="header-links" v-for="data in Data.links" :key="data.id">
-                        <Icon size="32">
+                        <!-- <Icon size="32">
                             <a class="" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
-                                <!-- <`${{ data.icon }}` /> -->
                                 <component :is="data.icon" />
-                                <!-- {{ data.name }} -->
                             </a>
                             <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
                                 {{ data.name }}
                             </a>
-                        </Icon>
+                        </Icon> -->
+                        <a class="" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
+                            {{ data.name }}
+                            </a>
+                            <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
+                                {{ data.name }}
+                            </a>
                     </div>
                 </div>
                 <div class="info-box">
@@ -83,7 +87,7 @@
         <section class="footer-box">
             <!-- <section class="footerInfo"> -->
             <section class="footer-container">
-                <h5 class="footer-description">Made with blah</h5>
+                <h5 class="footer-description">Made with Coffee</h5>
                 <h5 class="footer-description">© 2024 Portfolio by Thomas Yohannes</h5>
             </section>
             <!-- </section> -->
@@ -117,9 +121,6 @@ import { defineComponent, onMounted, ref } from 'vue'
 // import { Icon } from '@vicons/utils'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
-import { Icon } from '@vicons/utils'
-import { MdArrowForward, LogoGithub, LogoLinkedin } from "@vicons/ionIcons4";
-import { Location12Filled, Mail24Regular } from "@vicons/fluent";
 import Data from "../data.json"
 import "@lottiefiles/lottie-player";
 
@@ -129,12 +130,6 @@ export default defineComponent({
     components: {
         History,
         Tile,
-        Icon,
-        Location12Filled,
-        MdArrowForward,
-        LogoGithub,
-        LogoLinkedin,
-        Mail24Regular
     },
 
     setup() {

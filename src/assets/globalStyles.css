@@ -649,8 +649,13 @@ h1 {
 }
 
 @keyframes moveBackground {
-    0% { background-position: 0 0; }
-    100% { background-position: 100% 100%; }
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
 }
 
 h2 {
@@ -863,13 +868,31 @@ h6 {
     flex-direction: row;
 }
 
-.header-link-container, a {
+.header-link-container,
+a {
     /* margin: 0 10px 0 10px; */
     color: #81B29A;
 }
 
 .header-links {
     margin: 0 5px 0 5px;
+    color: black;
+    font-size: 20px;
+}
+
+.header-links a {
+    text-decoration: none;
+    /* Remove default underline */
+    border-bottom: 1px solid transparent;
+    /* Make bottom border transparent */
+    transition: border-bottom-color 0.3s ease;
+    /* Add transition effect */
+}
+
+/* Change bottom border color to desired color on hover */
+.header-links:hover a {
+    border-bottom-color: #81B29A;
+    /* Change to desired color */
 }
 
 .info-box {
@@ -955,11 +978,14 @@ h6 {
     /* color: #EDF6F9; */
     color: #F4F1DE;
 }
+
 .tile h5 {
     color: #F4F1DE;
 }
+
 .tile h6 {
-    color: #81B29A; /* Set font color to white */
+    color: #81B29A;
+    /* Set font color to white */
 }
 
 .tile-a,
@@ -1025,7 +1051,9 @@ h6 {
     box-sizing: border-box;
 }
 
-.job-box h4, h5, h6 {
+.job-box h4,
+h5,
+h6 {
     color: #F4F1DE;
 }
 
@@ -1075,7 +1103,9 @@ h6 {
     /* height: 400px; */
 }
 
-.edu-box h3, h4, h5 {
+.edu-box h3,
+h4,
+h5 {
     color: #F4F1DE;
 }
 
@@ -1125,7 +1155,10 @@ footer {
     margin: 0 auto;
 }
 
-.footer-box h3, h4, h5, h6 {
+.footer-box h3,
+h4,
+h5,
+h6 {
     color: #F4F1DE;
 }
 
@@ -1137,6 +1170,14 @@ footer {
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+
+.footer-icons:hover {
+    border-bottom-color: #F4F1DE;
 }
 
 .footer-container {

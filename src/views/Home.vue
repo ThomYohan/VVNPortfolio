@@ -1,60 +1,11 @@
 <template>
-    <!-- <div id="landing" ref="landing" class="jdLandingContainer">
-        <div class="landingTextContainer">
-        <div ref="landingName" class="landingName">
-            <div class="landingNameCont" v-once v-if="isVisible">
-            <div class="landingNameCont">
-                <lottie-player autoplay mode="normal" speed="1.5"
-                        src="https://assets1.lottiefiles.com/packages/lf20_llbjwp92qL.json" style="width: 350px">
-                    </lottie-player>
-                <section ref="header" class="scrolled">
-                    <n-gradient-text class="jdH1 header" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
-                        :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Y</n-gradient-text>
-                </section>
-            </div>
-            <div>
-                <h1 class="jdH1">Frontend Software Engineer</h1>
-                <h1 class="jdH3">
-                    <Icon size="32" style="color: red;">
-                        <Location12Filled />
-                    </Icon> Wichita, KS
-                </h1>
-            </div>
-            <div class="landingAnimationCont">
-                <lottie-player autoplay loop mode="normal"
-                        src="https://assets3.lottiefiles.com/packages/lf20_iombyzfq.json"
-                        style="width: 450px; max-width: 100vw;">
-                    </lottie-player>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div id="about" ref="about" class="aboutContainer">
-        <div>
-            <h2 class="jdH3">Fullstack Developer with a <h2 class="jdH3 center">Frontend Focus</h2>
-            </h2>
-        </div>
-        <div>
-            <h4 class="jdH5">Welcome to my personal website! I'm Thomas Yohannes, a Frontend Software Engineer with a
-                passion
-                for building beautiful and functional web experiences. Using cutting-edge technologies such as Vue 3,
-                Vite,
-                Naive UI, React, HTML, CSS, and TypeScript, I specialize in creating dynamic and engaging websites that
-                captivate users and deliver results. With expertise in fluid animations and
-                seamless
-                transitions to elevate your site to the next level. Whether you're looking to build a web app from
-                scratch or
-                need help optimizing an existing site, I'm here to help. Let's collaborate and create something amazing
-                together
-                that reflects the latest trends and best practices in the industry!</h4>
-        </div>
-    </div> -->
     <header class="header">
         <div class="header-container">
             <!-- <h1>Hello,</h1>
             <h1>I'm Thomas Yohannes</h1> -->
             <div class="title-box">
-                <!-- <h1 class="title-align">Hello,</h1>
-                    <h1 class="title-align">I'm Thomas Yohannes</h1> -->
+                <!-- <n-gradient-text class="title-align" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
+                    :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Yohannes</n-gradient-text> -->
                 <h1 class="title-align">I'm Thomas Yohannes</h1>
                 <h2 class="title-align">Frontend Software Engineer</h2>
             </div>
@@ -157,29 +108,6 @@
 
 
     <!-- <Tile id="tiles" ref="tiles" /> -->
-    <!-- <div id="reach" ref="reach" class="reachContainer">
-        <div class="reachLink">
-            <h3 class="jdH6">
-                If you're looking for a skilled
-                and
-                dedicated individual to join your group, feel free to contact me. Let's create something
-                great
-                together!
-            </h3>
-            <a href="mailto:thomasgyohannes@gmail.com">
-                <n-button type="tertiary">
-                    <h4 class="jdH3" style="color: cadetblue">
-                        Lets Connect
-                        <Icon size="24">
-                            <a class="center" href="mailto:thomasgyohannes@gmail.com" target="_blank">
-                                <MdArrowForward />
-                            </a>
-                        </Icon>
-                    </h4>
-                </n-button>
-            </a>
-        </div>
-    </div> -->
 </template>
 
 
@@ -220,8 +148,8 @@ export default defineComponent({
             entries.forEach(entry => {
                 if (entry.target.classList.contains("header-container")) {
                     entry.target.classList.add("header-scrolled");
-                // } else if (entry.target.classList.contains("tile")) {
-                //     entry.target.classList.add("animate");
+                    // } else if (entry.target.classList.contains("tile")) {
+                    //     entry.target.classList.add("animate");
                 } else if (entry.isIntersecting) {
                     entry.target.classList.add("animate");
                     // Stop observing the element after it's intersecting
@@ -231,7 +159,7 @@ export default defineComponent({
         };
 
         // Initialize IntersectionObserver
-        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.8 });
 
         // Execute code after component is mounted
         onMounted(() => {
@@ -273,7 +201,7 @@ export default defineComponent({
 
 
 <style scoped>
-p {
+/* p {
     color: lightsalmon
-}
+} */
 </style>

@@ -59,23 +59,6 @@
                 <h2 class="title-align">Frontend Software Engineer</h2>
             </div>
             <div class="header-box">
-                <!-- <div>
-                    <Icon size="24" class="icons">
-                        <a :href="Data.links[0].link" target="_blank">
-                            <LogoLinkedin />
-                        </a>
-                    </Icon>
-                    <Icon size="24" class="icons">
-                        <a class="center" :href="Data.links[1].link" target="_blank">
-                            <LogoGithub />
-                        </a>
-                    </Icon>
-                    <Icon size="24" class="icons">
-                        <a class="center" href="mailto:thomasgyohannes@gmail.com" target="_blank">
-                            <Mail24Regular />
-                        </a>
-                    </Icon>
-                </div> -->
                 <div class="header-link-container">
                     <div class="header-links" v-for="data in Data.links" :key="data.id">
                         <Icon size="32">
@@ -235,10 +218,12 @@ export default defineComponent({
 
         const handleIntersection = (entries: IntersectionObserverEntry[]) => {
             entries.forEach(entry => {
-                if (entry.target.classList.contains("title-box")) {
-                    entry.target.classList.add("title-scrolled");
+                if (entry.target.classList.contains("header-container")) {
+                    entry.target.classList.add("header-scrolled");
+                // } else if (entry.target.classList.contains("tile")) {
+                //     entry.target.classList.add("animate");
                 } else if (entry.isIntersecting) {
-                    entry.target.classList.add("scrolled");
+                    entry.target.classList.add("animate");
                     // Stop observing the element after it's intersecting
                     observer.unobserve(entry.target);
                 }
@@ -246,26 +231,27 @@ export default defineComponent({
         };
 
         // Initialize IntersectionObserver
-        const observer = new IntersectionObserver(handleIntersection, { threshold: 0 });
+        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
         // Execute code after component is mounted
         onMounted(() => {
             // Observe the desired elements
-            observeElement('.title-box');
-            observeElement('.aboutContainer');
+            observeElement('.navvyBar');
+            observeElement('.header-container');
+            observeElement('.tile')
+            observeElement('.job-box')
+            observeElement('.edu-box')
+            observeElement('.footer-box')
             observeElement('.reachContainer');
-            // observeElement('.progress-ae');
-            // observeElement('.progress-xd');
-            // observeElement('.progress-id');
         });
+
         const observeElement = (selector: string) => {
-            const element = document.querySelector(selector);
-            if (element) {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(element => {
                 observer.observe(element);
-            } else {
-                console.error(`Element with selector ${selector} not found`);
-            }
+            });
         };
+
         return {
             // header,
             landingName,

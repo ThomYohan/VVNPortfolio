@@ -915,6 +915,7 @@ h6 {
 .tile-d,
 .tile-e {
     max-width: 100%;
+    opacity: 0;
     /* Set maximum width to 100% */
 }
 
@@ -958,6 +959,7 @@ h6 {
 }
 
 .job-box {
+    opacity: 0;
     /* width: calc(50% - 10px); */
     width: calc(100% - 10px);
     background-color: #EBEBEB;
@@ -998,6 +1000,7 @@ h6 {
 } */
 
 .edu-box {
+    opacity: 0;
     /* width: calc(50% - 10px); */
     width: 100%;
     /* border: 5px solid teal; */
@@ -1045,6 +1048,7 @@ footer {
 
 
 .footer-box {
+    opacity: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -1098,37 +1102,53 @@ footer {
     width: 100%;
 }
 
-.title-scrolled>* {
+.header-scrolled>* {
     opacity: 0;
-    /* transform: translateY(-50px);  */
-    /* transition: opacity 0.5s ease;  */
-    animation: fadeIn 2s forwards, slideInY 1s ease forwards;
+    animation: fadeIn 1s forwards, slideInY 1s ease forwards;
 }
 
-.title-scrolled>*:nth-child(1) {
-    animation-delay: 0.1s;
+.header-scrolled>*:nth-child(1) {
+    animation-delay: 0s;
 }
 
-.title-scrolled>*:nth-child(2) {
-    animation-delay: 0.5s;
-    /* Adjust this value based on your desired delay */
+.header-scrolled>*:nth-child(2) {
+    animation-delay: 0.15s;
 }
 
-  @keyframes fadeIn {
+/* .projects-scrolled > *:nth-child(1),
+.projects-scrolled > *:nth-child(2) {
+    animation: fadeIn 1s forwards, slideInY 1s ease forwards;
+} */
+
+.projects-scrolled>* {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animate {
+    opacity: 1;
+    animation: fadeIn 1s forwards, slideInY 1s ease forwards;
+}
+
+@keyframes fadeIn {
     from {
-        opacity: 0; /* Start from fully transparent */
+        opacity: 0;
     }
+
     to {
-        opacity: 1; /* Transition to fully opaque */
+        opacity: 1;
     }
 }
 
 @keyframes slideInY {
     from {
-        transform: translateY(50px); /* Start 50px above final position */
+        transform: translateY(50px);
+        /* Start 50px above final position */
     }
+
     to {
-        transform: translateY(0); /* Transition to final position */
+        transform: translateY(0);
+        /* Transition to final position */
     }
 }
 

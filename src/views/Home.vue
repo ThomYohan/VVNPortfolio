@@ -161,7 +161,7 @@ export default defineComponent({
         // Execute code after component is mounted
         onMounted(() => {
             // Observe the desired elements
-            observeElement('.navvyBar');
+            // observeElement('.navvyBar');
             observeElement('.header-container');
             observeElement('.tile')
             observeElement('.job-box')

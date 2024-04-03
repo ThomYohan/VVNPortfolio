@@ -1,7 +1,6 @@
 <template>
   <n-config-provider :theme-overrides="themeOverrides">
     <div class="webContainer">
-      <!-- <NavBar ref="navbar" @scrollTo="scrollToRef" /> -->
       <router-view />
       <!-- <Footer /> -->
     </div>
@@ -14,7 +13,7 @@
 import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
 // import NavBar from './components/NavBar.vue';
 // import Footer from './components/Footer.vue';
-import { ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 
 
 const themeOverrides: GlobalThemeOverrides = {
@@ -40,16 +39,7 @@ const themeOverrides: GlobalThemeOverrides = {
 
 }
 
-// const navbar = ref();
-// const scrollToRef = (refValue: string) => {
-//   const element = document.querySelector(`[ref=${refValue}]`) as HTMLElement;
-//   if (element) {
-//     element.scrollIntoView({ behavior: 'smooth' });
-//   }
-// }
-
 onMounted(() => {
-  // navbar.value = document.querySelector('.webContainer');
 });
 </script>
 

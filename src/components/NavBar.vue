@@ -3,7 +3,7 @@
         <section class="navvyBarContainer">
             <router-link class="jdNav" style="margin-left: 10px;" :to="Data.routes[0].route">TY</router-link>
             <div class="navvyBarTile">
-                <a href="../assets/ThomasYohannes-SWE2024.pdf" class="jdNav" target="_blank">Resume</a>
+                <a href="src/assets/ThomasYohannes-SWE2024.pdf" class="jdNav" target="_blank">Resume</a>
             </div>
         </section>
     </main>

@@ -885,22 +885,19 @@ a {
 
 .header-links a {
     text-decoration: none;
-    /* Remove default underline */
-    border-bottom: 1px solid transparent;
-    /* Make bottom border transparent */
+    /* cursor: pointer; */
+    border-bottom: 1px solid transparent; /* Move border-bottom here */
     transition: border-bottom-color 0.3s ease;
-    /* Add transition effect */
 }
 
-/* Change bottom border color to desired color on hover */
-.header-links:hover a {
-    border-bottom-color: #81B29A;
-    /* Change to desired color */
+.header-icons:hover {
+    border-bottom-color: #81B29A; /* Change to desired color */
 }
 
 .header-icons {
     /* color: #4f4f4f; */
     color: #81B29A;
+    cursor: pointer;
     /* margin-top: 20px; */
     margin: 0 15px 0 0;
     font-size: 24px;

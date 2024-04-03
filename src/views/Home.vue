@@ -13,20 +13,12 @@
             <div class="header-box">
                 <div class="header-link-container">
                     <div class="header-links" v-for="data in Data.links" :key="data.id">
-                        <!-- <Icon size="32">
-                            <a class="" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
-                                <component :is="data.icon" />
-                            </a>
-                            <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
-                                {{ data.name }}
-                            </a>
-                        </Icon> -->
                         <a class="" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
                             {{ data.name }}
-                            </a>
-                            <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
-                                {{ data.name }}
-                            </a>
+                        </a>
+                        <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
+                            {{ data.name }}
+                        </a>
                     </div>
                 </div>
                 <div class="info-box">
@@ -94,16 +86,14 @@
             <!-- </section> -->
             <section class="footer-container2">
                 <div v-for="data in Data.footerLinks" :key="data.id">
-                    <Icon size="24">
-                        <a class="footer-icons" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
-                            <!-- <`${{ data.icon }}` /> -->
-                            <!-- <component :is="data.icon" /> -->
-                            {{ data.name }}
-                        </a>
-                        <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
-                            {{ data.name }}
-                        </a>
-                    </Icon>
+                    <a class="footer-icons" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
+                        <!-- <`${{ data.icon }}` /> -->
+                        <!-- <component :is="data.icon" /> -->
+                        {{ data.name }}
+                    </a>
+                    <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
+                        {{ data.name }}
+                    </a>
                 </div>
             </section>
 
@@ -161,7 +151,7 @@ export default defineComponent({
         // Execute code after component is mounted
         onMounted(() => {
             // Observe the desired elements
-            // observeElement('.navvyBar');
+            observeElement('.navvyBar');
             observeElement('.header-container');
             observeElement('.tile')
             observeElement('.job-box')

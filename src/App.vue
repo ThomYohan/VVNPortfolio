@@ -40,16 +40,16 @@ const themeOverrides: GlobalThemeOverrides = {
 
 }
 
-const navbar = ref();
-const scrollToRef = (refValue: string) => {
-  const element = document.querySelector(`[ref=${refValue}]`) as HTMLElement;
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-}
+// const navbar = ref();
+// const scrollToRef = (refValue: string) => {
+//   const element = document.querySelector(`[ref=${refValue}]`) as HTMLElement;
+//   if (element) {
+//     element.scrollIntoView({ behavior: 'smooth' });
+//   }
+// }
 
 onMounted(() => {
-  navbar.value = document.querySelector('.webContainer');
+  // navbar.value = document.querySelector('.webContainer');
 });
 </script>
 

@@ -13,14 +13,15 @@
             <div class="header-box">
                 <div class="header-link-container">
                     <div class="header-links">
-                        <a class="header-icons" :href="Data.links[0].link">
-                            <font-awesome-icon :icon="['fab', 'github']" />
-                        </a>
-                        <a class="header-icons" :href="Data.links[1].link">
+                        <a class="header-icons" :href="Data.links[0].link" target="_blank">
                             <font-awesome-icon icon="fa-brands fa-linkedin" />
+                        </a>
+                        <a class="header-icons" :href="Data.links[1].link" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'github']" />
+
 
                         </a>
-                        <a class="header-icons" :href="Data.links[2].link">
+                        <a class="header-icons" :href="Data.links[2].link" target="_blank">
                             <font-awesome-icon icon="fa-solid fa-envelope" />
                         </a>
 

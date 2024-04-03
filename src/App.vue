@@ -1,7 +1,7 @@
 <template>
   <n-config-provider :theme-overrides="themeOverrides">
     <div class="webContainer">
-      <NavBar ref="navbar" @scrollTo="scrollToRef" />
+      <!-- <NavBar ref="navbar" @scrollTo="scrollToRef" /> -->
       <router-view />
       <!-- <Footer /> -->
     </div>
@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
-import NavBar from './components/NavBar.vue';
+// import NavBar from './components/NavBar.vue';
 // import Footer from './components/Footer.vue';
 import { ref, onMounted } from 'vue';
 

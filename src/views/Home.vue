@@ -1,5 +1,6 @@
 <template>
     <header class="header">
+        <NavBar />
         <div class="header-container">
             <!-- <h1>Hello,</h1>
             <h1>I'm Thomas Yohannes</h1> -->
@@ -119,6 +120,7 @@ import { defineComponent, onMounted, ref } from 'vue'
 // import { darkTheme } from 'naive-ui'
 // import type { GlobalTheme } from 'naive-ui'
 // import { Icon } from '@vicons/utils'
+import NavBar from '../components/NavBar.vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import Data from "../data.json"
@@ -130,6 +132,7 @@ export default defineComponent({
     components: {
         History,
         Tile,
+        NavBar
     },
 
     setup() {

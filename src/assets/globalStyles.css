@@ -898,6 +898,19 @@ a {
     /* Change to desired color */
 }
 
+.header-icons {
+    /* color: #4f4f4f; */
+    color: #81B29A;
+    /* margin-top: 20px; */
+    margin: 0 15px 0 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
 .info-box {
     display: flex;
     flex-direction: column;
@@ -1177,7 +1190,6 @@ h6 {
     border-bottom: 1px solid transparent;
     transition: border-bottom-color 0.3s ease;
 }
-
 
 .footer-icons:hover {
     border-bottom-color: #F4F1DE;

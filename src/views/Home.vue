@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <NavBar />
+        <!-- <NavBar /> -->
         <div class="header-container">
             <!-- <h1>Hello,</h1>
             <h1>I'm Thomas Yohannes</h1> -->
@@ -12,13 +12,18 @@
             </div>
             <div class="header-box">
                 <div class="header-link-container">
-                    <div class="header-links" v-for="data in Data.links" :key="data.id">
-                        <a class="" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
-                            {{ data.name }}
+                    <div class="header-links">
+                        <a class="header-icons" :href="Data.links[0].link">
+                            <font-awesome-icon :icon="['fab', 'github']" />
                         </a>
-                        <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
-                            {{ data.name }}
+                        <a class="header-icons" :href="Data.links[1].link">
+                            <font-awesome-icon icon="fa-brands fa-linkedin" />
+
                         </a>
+                        <a class="header-icons" :href="Data.links[2].link">
+                            <font-awesome-icon icon="fa-solid fa-envelope" />
+                        </a>
+
                     </div>
                 </div>
                 <div class="info-box">
@@ -29,8 +34,6 @@
     </header>
     <main class="page-layout">
         <section class="projects">
-            <!-- <section class="projects" v-for="(project, index) in Data.projects" :key="project.id"> -->
-            <!-- <div class="tile" :class="getTileClass(index)">Tile A</div> -->
             <div class="tile tile-a">
                 <h3 class="tile-header">{{ Data.projects[0].name }}</h3>
                 <div class="techStack">
@@ -87,8 +90,6 @@
             <section class="footer-container2">
                 <div v-for="data in Data.footerLinks" :key="data.id">
                     <a class="footer-icons" v-if="data.name !== 'Resume'" :href="data.link" target="_blank">
-                        <!-- <`${{ data.icon }}` /> -->
-                        <!-- <component :is="data.icon" /> -->
                         {{ data.name }}
                     </a>
                     <a class="footer-icons" v-else :href="data.link" target="_blank" rel="">
@@ -109,11 +110,16 @@
 import { defineComponent, onMounted, ref } from 'vue'
 // import { darkTheme } from 'naive-ui'
 // import type { GlobalTheme } from 'naive-ui'
-// import { Icon } from '@vicons/utils'
 import NavBar from '../components/NavBar.vue'
 import History from '../components/History.vue'
 import Tile from '../components/Tile.vue'
 import Data from "../data.json"
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { } from '@fortawesome/fontawesome-svg-core'
+// import { } from '@fortawesome/free-regular-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+// import { faLinkedinIn } from '@awesome.me/kit-KIT_CODE/icons'
 import "@lottiefiles/lottie-player";
 
 
@@ -122,7 +128,11 @@ export default defineComponent({
     components: {
         History,
         Tile,
-        NavBar
+        NavBar,
+        FontAwesomeIcon,
+        // faGithub,
+        // faLinkedin,
+        // faEnvelope,
     },
 
     setup() {

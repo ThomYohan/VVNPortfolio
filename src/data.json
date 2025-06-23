@@ -140,10 +140,24 @@
     "history": [
         {
             "id": "1",
+            "role": "Software Engineer",
+            "name": "Creatively Free Studios",
+            "location": "Longmont, Colorado",
+            "date": "October 2024 - Now",
+            "details": {
+                "detail1": "Built and shipped a mobile app, end-to-end using React Native, including onboarding flow, user dashboard, reward system, and subscription features",
+                "detail2": "",
+                "detail3": "",
+                "detail4": "",
+                "detail5": ""
+            }
+        },
+        {
+            "id": "2",
             "role": "iOS Engineer",
             "name": "Par West",
             "location": "Rancho Cucamonga, California",
-            "date": "April 2023 - August 2024",
+            "date": "April 2023 - October 2024",
             "details": {
                 "detail1": "Implemented robust data persistence mechanisms to ensure accurate and efficient saving of crucial application data",
                 "detail2": "Worked directly with an outsourced team of proficient UI/UX Designers to review, clean up, and finalize new production designs for a multi-quarter project",
@@ -153,7 +167,7 @@
             }
         },
         {
-            "id": "2",
+            "id": "3",
             "role": "Software Engineer",
             "name": "Dstillery",
             "location": "New York",
@@ -167,7 +181,7 @@
             }
         },
         {
-            "id": "3",
+            "id": "4",
             "role": "Software Engineer",
             "name": "Speakfully",
             "location": "Eau Claire, WI",
@@ -181,7 +195,7 @@
             }
         },
         {
-            "id": "4",
+            "id": "5",
             "role": "Full Stack Developer",
             "name": "RentChirp",
             "location": "San Francisco, CA",
@@ -195,7 +209,7 @@
             }
         },
         {
-            "id": "5",
+            "id": "6",
             "role": "Associate Software Engineer",
             "name": "PK Technology",
             "location": "Wichita, KS",

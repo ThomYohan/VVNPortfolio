@@ -7,8 +7,8 @@
             <div class="title-box">
                 <!-- <n-gradient-text class="title-align" gradient="linear-gradient(90deg, #CAA8F5, #44FFD2, #F79256)"
                     :animation-speed="1" :animation-direction="'alternate'">I'm Thomas Yohannes</n-gradient-text> -->
-                <h1 class="title-align">I'm Thomas Yohannes</h1>
-                <h2 class="title-align">Frontend Software Engineer</h2>
+                <h1 class="title">I'm Thomas Yohannes</h1>
+                <h2 class="subtitle">Frontend Software Engineer</h2>
             </div>
             <div class="header-box">
                 <div class="header-link-container">
